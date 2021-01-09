@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gonzalo Palacios">
-    <meta name="description" content="Assignment Portal for Gonzalo Palacios in WDD 230 Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description"
+        content="Assignment Portal for Gonzalo Palacios in WDD 230 Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="style.css">
     <title>WDD 230 Assignments</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Gonzalo M. Palacios</h1>
-        <img src="#" alt="Profile image">
-        <div class="assigments-section">
-            <h2>WDD 230: Assingment Portal</h2>
+        <div class="header">
+            <img src="images\profile-image.jpg" alt="Profile image">
+            <h1>Gonzalo M. Palacios</h1>
+        </div>
+
+        <div class="assignments-section">
+            <h2>WDD 230: Assignment Portal</h2>
             <ul>
-                <li>Lesson 02: Coming soon</li>
-                <li>Lesson 03: Coming soon</li>
-                <li>Lesson 04: Coming soon</li>
+                <li>Lesson 01: <a href="#">Coming soon</a></li>
+                <li>Lesson 02: <a href="#">Coming soon</a></li>
+                <li>Lesson 03: <a href="#">Coming soon</a></li>
+                <li>Lesson 04: <a href="#">Coming soon</a></li>
+                <li>Lesson 05: <a href="#">Coming soon</a></li>
+                <li>Lesson 06: <a href="#">Coming soon</a></li>
+                <li>Lesson 07: <a href="#">Coming soon</a></li>
+                <li>Lesson 08: <a href="#">Coming soon</a></li>
+                <li>Lesson 09: <a href="#">Coming soon</a></li>
+                <li>Lesson 10: <a href="#">Coming soon</a></li>
             </ul>
         </div>
+
         <footer>
-            <p>&copy;2021 | Gonzalo M. Palacios | Lima - Peru | BYUI Online Learning</p>
-            <p class="date">Last Updated: 01/08/2021</p>
+            <p>&copy;2021 | Gonzalo M. Palacios | Lima- Peru | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a></p>
+            <p>Last Updated: <div id="lastUpdate"></div></p>
         </footer>
     </div>
-    
+
+    <script src="js\date.js"></script>
 </body>
+
 </html>

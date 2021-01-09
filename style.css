@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #6a2c70;
+    --secondary-color: #b83b5e;
+    --accent1-color: #f9ed69;
+    --accent2-color: #f08a5d;
+    --principal-font: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--accent1-color);
+    font-family: var(--principal-font);
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    height: 100px;
+
+}
+
+.header h1 {
+    color: var(--accent1-color);
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+}
+
+.header img {
+    width: 200px;
+    border-radius: .5em;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.assignments-section {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    background: linear-gradient(0deg, rgba(249,237,105,1) 0%, rgba(240,138,93,1) 100%);
+    color: var(--primary-color);
+    width: 97.5%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 15px 35px;
+}
+
+.assignments-section h2 {
+    margin: 0;
+}
+
+.assignments-section ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.assignments-section ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    border-radius: .5em;
+    color: var(--accent1-color);
+    text-align: center;
+    height: 75px;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--accent1-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+footer p {
+    margin: 0;
+}
