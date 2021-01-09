@@ -48,13 +48,15 @@ body {
     background: linear-gradient(0deg, rgba(249,237,105,1) 0%, rgba(240,138,93,1) 100%);
     color: var(--primary-color);
     width: 97.5%;
-    height: 300px;
+    height: 330px;
     margin: 0 auto;
     padding: 15px 35px;
 }
 
 .assignments-section h2 {
     margin: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
 }
 
 .assignments-section ul li a {
