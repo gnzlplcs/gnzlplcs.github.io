@@ -36,6 +36,7 @@ body {
 
 .header img {
     width: 200px;
+    border: solid 5px var(--accent2-color);
     border-radius: .5em;
     float: right;
     margin-right: 15px;
