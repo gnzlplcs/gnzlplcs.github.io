@@ -5,7 +5,7 @@
     --secondary-color: #b83b5e;
     --accent1-color: #f9ed69;
     --accent2-color: #f08a5d;
-    --principal-font: "Roboto", Arial, Helvetica, sans-serif;
+    --principal-font: "Noto Sans", "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -16,31 +16,29 @@ body {
 .container {
     box-sizing: border-box;
     margin: 0 auto;
-    width: 800px;
+    width: 80vw;
 }
 
 .header {
     box-sizing: border-box;
     background-color: var(--primary-color);
     border-radius: 0.5em;
-    height: 100px;
-
+    margin: 0;
+    text-align: center;
+    padding: 3rem;
 }
 
 .header h1 {
     color: var(--accent1-color);
-    margin: 0;
     text-align: center;
-    padding: 30px;
+    padding: 0.75rem;
+    max-width: 45rem;
+    margin: 0;
 }
 
 .header img {
-    width: 200px;
-    border: solid 5px var(--accent2-color);
-    border-radius: .5em;
-    float: right;
-    margin-right: 15px;
-    margin-top: 15px;
+    width: 20vw;
+    margin: 0 auto;
 }
 
 .assignments-section {
