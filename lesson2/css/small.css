@@ -70,6 +70,12 @@ main {
     color: var(--secondary-color);
 }
 
+.principles a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .principles img {
     box-sizing: border-box;
     width: 100%;
