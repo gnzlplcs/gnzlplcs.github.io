@@ -3,6 +3,7 @@
 
 html {
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--tertiary-color);
     font-family: var(--paragraph-font);
 }
@@ -32,24 +34,26 @@ header h1 {
 }
 
 main {
+    box-sizing: border-box;
     display: grid;
     grid-template-rows: repeat(3, auto);
-    grid-gap: 1em;
+    grid-gap: 5px;
     justify-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .principles {
+    box-sizing: border-box;
     background-color: var(--accent2-color);
     width: 95vw;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
 }
 
 .principles h2 {
     color: var(--accent1-color);
     font-family: var(--title-font);
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     margin: 10px 0;
 }
@@ -75,8 +79,8 @@ main {
 
 .principles p {
     color: #e0fbfc;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.15em;
+    padding: 5px;
     margin: 0;
 }
 
