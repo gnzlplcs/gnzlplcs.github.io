@@ -21,10 +21,11 @@ body {
     box-sizing: border-box;
     background-color: var(--tertiary-color);
     font-family: var(--paragraph-font);
+    min-block-size: 360px;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
 }
 
 header h1 {
