@@ -105,6 +105,30 @@ main section .font-pick {
     margin: 15px 0;
 }
 
+.font-square,
+.font-description  {
+    margin-bottom: 10px;
+}
+
+
+#sample1 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#sample2 {
+    font-family: var(--font-secondary-title);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#sample3 {
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 main section .content p {
     margin-bottom: 15px;
 }
