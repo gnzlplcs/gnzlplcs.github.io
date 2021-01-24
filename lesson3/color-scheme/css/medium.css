@@ -13,16 +13,4 @@
         justify-content: space-around;
     }
 
-    main .target,
-    main section .persona,
-    main .scenarios {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-
-    main section .field p,
-    main section .content p {
-        margin: 10px 0;
-    }
-    
 }
