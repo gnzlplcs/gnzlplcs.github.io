@@ -17,6 +17,44 @@
     nav .menu {
         display: inline;
     }
+
+    .heroimage {
+        position: relative;
+    }
+    
+    .weathersummary {
+        box-sizing: border-box;
+        border: 2px solid var(--color-dark1);
+        width: 180px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(55, 50, 62, .85);
+        padding: 10px;
+    }
+    
+    .weathersummary h2,
+    .weathersummary p {
+        color: var(--color-light2);
+        margin: 0;
+    }
+    
+    .weathersummary h2 {
+        border-bottom: 2px solid var(--color-light2);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        grid-column: span 2;
+    }
+    
+    .weathersummary p:first-of-type {
+        padding-top: 10px;
+    }
+    
+    .weathersummary p span {
+        font-weight: bolder;
+        color: var(--color-accent3);
+    }
+
     header,
     main,
     footer {
