@@ -64,7 +64,17 @@
     }
 
     #forecast {
-        grid-gap: 10px;
+        grid-gap: 5px;
+    }
+
+    article .content {
+        display: block;
+    }
+
+    article .img-container {
+        width: 300px;
+        float: right;
+        margin: 0 0 10px 20px;
     }
 
     header,
@@ -73,5 +83,4 @@
         max-width: 940px;
         margin: 0 auto;
     }
-
 }
