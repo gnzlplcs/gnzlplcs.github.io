@@ -128,23 +128,12 @@ main {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37323e+0,6d6a75+100 */
     background: rgb(55, 50, 62);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37323e', endColorstr='#6d6a75', GradientType=0);
-    /* IE6-9 */
 }
 
 @media only screen and (max-width: 330px) {
     .weathersummary {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
     }
 }
 
@@ -174,7 +163,6 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3px;
-
 }
 
 #forecast h1 {
