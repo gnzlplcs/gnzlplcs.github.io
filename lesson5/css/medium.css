@@ -95,7 +95,7 @@
     #contact-info {
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto 1fr;
         grid-gap: 10px;
     }
 
@@ -107,10 +107,13 @@
     #contact-info h1 {
         grid-column: span 2;
     }
-
+    
     .contact-info {
-        /* display: flex; */
-        margin: 0    ;
+        align-self: flex-end;
+    }
+
+    .contact-info .social-icons {
+        justify-content: flex-end;
     }
 
     header,
