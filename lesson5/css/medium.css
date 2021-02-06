@@ -73,7 +73,7 @@
 
     article {
         box-sizing: border-box;
-        border: 3px solid var(--color-dark1);
+        border: 3px solid #37323e;
     }
     
     article h1 {
