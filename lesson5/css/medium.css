@@ -92,6 +92,27 @@
         margin: 0 0 10px 20px;
     }
 
+    #contact-info {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
+
+    iframe {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #contact-info h1 {
+        grid-column: span 2;
+    }
+
+    .contact-info {
+        /* display: flex; */
+        margin: 0    ;
+    }
+
     header,
     main,
     footer {
