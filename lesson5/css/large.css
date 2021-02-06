@@ -32,7 +32,6 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37323e', endColorstr='#6d6a75', GradientType=0);
         /* IE6-9 */
-
     }
 
     nav ul li a {
@@ -43,5 +42,10 @@
 
     nav ul li a:hover {
         color: var(--color-dark1);
+    }
+
+    article .img-container {
+        width: 450px;
+
     }
 }
