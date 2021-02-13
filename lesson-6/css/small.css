@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Asul&family=Neuton&family=Work+Sans&display=swap');
-
 :root {
     --font-title: 'Asul', sans-serif;
     --font-secondary-title: 'Neuton', serif;
@@ -7,7 +5,7 @@
     --color-dark1: #37323e;
     --color-dark2: #6D6A75;
     --color-light1: #BFBDC1;
-    --color-light2: rgb(222, 184, 65);
+    --color-light2: #deb841;
     --color-accent3: #de9e36;
 }
 

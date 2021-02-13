@@ -3,3 +3,9 @@ const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 let currentDate = new Date(document.lastModified);
 let result = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " "  + currentDate.getFullYear();
 document.getElementById('lastUpdate').innerHTML = result;
+
+WebFont.load({
+    google: {
+      families: ['Work Sans', 'Neuto', 'Asul']
+    }
+  });

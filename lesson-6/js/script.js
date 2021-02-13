@@ -31,3 +31,10 @@ document.getElementById('day2').innerHTML = day2;
 document.getElementById('day3').innerHTML = day3;
 document.getElementById('day4').innerHTML = day4;
 document.getElementById('day5').innerHTML = day5;
+
+// Font 
+WebFont.load({
+    google: {
+      families: ['Work Sans', 'Neuton', 'Asul']
+    }
+  });
