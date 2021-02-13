@@ -1,0 +1,1 @@
+This is an attemp to trying the page loads automatically
