@@ -4,7 +4,7 @@ const loadImages = (image) => {
     image.onload = () => {
         image.removeAttribute('data-src');
     }
-}
+};
 
 imagesToLoad.forEach((img) => {
     loadImages(img);
