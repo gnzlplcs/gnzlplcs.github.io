@@ -265,3 +265,22 @@ footer a:hover {
     display: table;
     clear: both;
 }
+
+
+/* CSS Gallery */
+#gallery-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em auto;
+    justify-content: center;
+    width: 95vw;
+}
+
+picture {
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}

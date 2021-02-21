@@ -48,4 +48,10 @@
         width: 450px;
 
     }
+
+    /* CSS Gallery */
+
+#gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 }

@@ -1,4 +1,7 @@
-const imgOptions = {
+  // JS Gallery
+
+
+  const imgOptions = {
     threshold: 1,
     rootmargin: "0px 0px -300px 0px"
   };
@@ -41,4 +44,3 @@ const imgOptions = {
       loadImages(img);
     });
   }
-
