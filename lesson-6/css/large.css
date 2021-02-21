@@ -51,7 +51,15 @@
 
     /* CSS Gallery */
 
-#gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-}
+    #gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    picture img:hover {
+        box-shadow: .25em .25em 2px 1px rgba(222, 158, 54, .9);
+    }
+
+    picture img:hover + p {
+        display: block;
+    }
 }

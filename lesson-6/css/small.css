@@ -284,3 +284,8 @@ picture {
 picture img {
     width: 100%;
 }
+
+picture p {
+    display: none;
+    text-align: center;
+}
