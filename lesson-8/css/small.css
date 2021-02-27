@@ -167,6 +167,11 @@ form label.sbs {
 
 }
 
+#stormSeverity {
+    width: 100%;
+    max-width: 504px;
+}
+
 form label#severity {
     margin-top: .7rem;
 }
