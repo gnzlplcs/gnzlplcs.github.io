@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Palacios">
+    <meta name="description" content="Storm Center Page">
+    <link rel="shortcut icon" href="images/sun-regular-96.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+</head>
+
+<body>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+    <header>
+        <div class="page-logo">
+            <img src="images/weather-logo.png" alt="Today's Weather Logo">
+        </div>
+        <div class="page-header">
+            <h1>Today's Weather</h1>
+            <p>Plan your day out, plan your life out</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
+        <ul id="nav-menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">Full Name* <input type="text" name="fname" id="fname" pattern="[a-zA-Z]{5}"
+                        title="Only letters and at least 5 characters" required></label>
+                <label for="email">Email* <input type="email" name="email" id="email" required></label>
+                <label for="phone">Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                <label for="zipcode">ZIP Code* <input type="number" name="zipcode" id="zipcode" pattern="[0-9]{1,5}"
+                        title="Please, insert only numbers"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label for="stormDate">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
+                <label for="stormType">Storm Type
+                    <input list="stormTypeList" id="stormType" name="stormType">
+                    <datalist name="stormTypeList" id="stormTypeList">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label for="stormSeverity">Storm Severity
+                    <input type="range" name="stormSeverity" id="stormSeverity" value="5" min="1" max="10" step="1"
+                        list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span
+                        id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label for="stormRegion">Storm Region
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Havens</option>
+                    </select>
+                </label>
+                <div>Are you in danger?
+                    <label>
+                        <input type="radio" name="danger" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="danger" value="no"> No
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="comments">Please, comment us more about your case.
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+            <input type="button" value="Send your situation">
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy;2021 | Gonzalo M. Palacios | Lima-Peru | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/">Main Page</a></p>
+        <p>Last Updated: <span id="lastUpdate"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
