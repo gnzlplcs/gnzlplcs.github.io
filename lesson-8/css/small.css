@@ -112,134 +112,85 @@ nav ul.hide {
 
 main {
     box-sizing: border-box;
-    justify-content: center;
+    padding: 0 2%;
+    min-height: 20rem;
+
 }
 
-.main-content {
-    padding: 5px;
-    margin: 5px;
-}
-
-.main-content img {
-    width: 100%;
-}
-
-.main-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: var(--color-dark1);
-}
-
-
-.weathersummary {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3px;
+/* ---------FORM----------------- */
+form fieldset {
     box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    background: rgb(55, 50, 62);
+    margin: 2rem 0;
+    border: 1px solid var(--color-dark2);
+    border-radius: 10px;
+    padding: .5rem 3%;
 }
 
-@media only screen and (max-width: 330px) {
-    .weathersummary {
-        display: block;
-    }
-}
-
-.weathersummary h2 {
-    color: var(--color-light2);
-    margin: 0;
-}
-
-.weathersummary p {
-    color: var(--color-light1);
-    margin: 0;
-}
-
-.weathersummary h2 {
-    border-bottom: 2px solid var(--color-light2);
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    grid-column: span 2;
-}
-
-.weathersummary p span {
-    font-weight: bolder;
+form legend {
     color: var(--color-accent3);
+    background-color: var(--color-dark2);
+    padding: .2rem .4rem;
+    border-radius: 5px;
 }
 
-#forecast {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 3px;
-}
-
-#forecast h1 {
-    grid-column: span 5;
-}
-
-.forecast-day {
-    border: 1px solid transparent;
-    background-color: rgb(250, 250, 250);
-    text-align: center;
-    color: var(--color-dark2);
-}
-
-#five-days {
-    display: none;
-}
-
-article .content {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-article .img-container {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.map iframe {
-    width: 100%;
-    max-height: 300px;
-    margin-top: 15px;
-}
-
-.contact-info img {
-    width: 30px;
-    padding: 5px;
-}
-
-.contact-info {
+form label.top,
+form label.sbs,
+form div {
+    box-sizing: border-box;
     display: block;
-    align-items: center;
-    margin-top: 15px;
-}
-.contact-info p {
-    margin: 0;
-}
-
-.contact-info div {
-    display: flex;
-    align-items: center;
-}
-
-.contact-info p a {
-    text-decoration: none;
+    padding-top: 1rem;
     color: var(--color-dark1);
+    font-size: .8rem;
+
 }
 
-.contact-info p a:hover {
-    text-decoration: underline;
-    color: var(--color-accent3);
-    font-weight: bold;
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--color-dark1);
+    border-radius: 4px;
+    padding: .7rem;
+    color: var(--color-dark1);
+    background: whitesmoke;
+    width: 90vw;
+    max-width: 504px;
 }
 
-.contact-info .social-icons {
-    justify-content: center;
-    margin-top: 10px;
+form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: var(--color-dark1);
+
 }
 
+form label#severity {
+    margin-top: .7rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--color-accent3);
+    color: var(--color-dark1);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 504px;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/* ------------FOOTER------------- */
 footer {
     box-sizing: border-box;
     background-color: var(--color-dark1);
@@ -257,6 +208,15 @@ footer a {
 footer a:hover {
     color: var(--color-accent3);
     font-weight: bold;
+}
+
+/* --------------THANKS PAGE- -------------- */
+form section {
+    box-sizing: border-box;
+    padding: .5rem 3%;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 504px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

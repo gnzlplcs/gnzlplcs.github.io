@@ -42,20 +42,21 @@
     </nav>
 
     <main>
+        <h2>Storm Center</h2>
         <form action="thanks.html" method="GET">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label for="fname">Full Name* <input type="text" name="fname" id="fname" pattern="[a-zA-Z]{5}"
+                <label class="top" for="fname">Full Name* <input type="text" name="fname" id="fname" pattern=".{5,}"
                         title="Only letters and at least 5 characters" required></label>
-                <label for="email">Email* <input type="email" name="email" id="email" required></label>
-                <label for="phone">Phone Number* <input type="tel" name="phone" id="phone" required></label>
-                <label for="zipcode">ZIP Code* <input type="number" name="zipcode" id="zipcode"></label>
+                <label class="top" for="email">Email* <input type="email" name="email" id="email" required></label>
+                <label class="top" for="phone">Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                <label class="top" for="zipcode">ZIP Code* <input type="number" name="zipcode" id="zipcode"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Storm Information</legend>
-                <label for="stormDate">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
-                <label for="stormType">Storm Type
+                <label class="top" for="stormDate">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
+                <label class="top" for="stormType">Storm Type
                     <input list="stormTypeList" id="stormType" name="stormType">
                     <datalist id="stormTypeList">
                         <option value="Flash Flood"></option>
@@ -65,7 +66,7 @@
                         <option value="Tornado"></option>
                     </datalist>
                 </label>
-                <label for="stormSeverity">Storm Severity
+                <label class="sbs" for="stormSeverity" id="severity">Storm Severity <br>
                     <input type="range" name="stormSeverity" id="stormSeverity" value="5" min="1" max="10" step="1"
                         list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span
                         id="ratingvalue">5</span>
@@ -83,7 +84,7 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
-                <label for="stormRegion">Storm Region
+                <label class="top" for="stormRegion">Storm Region
                     <select name="stormRegion" id="stormRegion">
                         <option value="">Select Region &#9662;</option>
                         <option value="preston">Preston</option>
@@ -92,23 +93,17 @@
                     </select>
                 </label>
                 <div>Are you in danger?
-                    <label>
-                        <input type="radio" name="danger" value="yes"> Yes
-                    </label>
-                    <label>
-                        <input type="radio" name="danger" value="no"> No
-                    </label>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
-                <label for="comments">Please, comment us more about your case.
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <label class="top" for="comments">Please, comment us more about your case.
+                    <textarea name="comments" id="comments"></textarea>
                 </label>
             </fieldset>
-            <input type="button" value="Send your situation">
-
-
+            <input class="submitBtn" type="submit" value="Report situation">
         </form>
 
     </main>
