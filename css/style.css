@@ -17,6 +17,8 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     width: 80vw;
+    min-height: 100vh;
+    position: relative;
 }
 
 .header {
@@ -40,6 +42,7 @@ body {
     width: 20vw;
     margin: 0 auto;
     border-radius: 5px;
+    max-width: 150px;
 }
 
 .assignments-section {
@@ -50,13 +53,17 @@ body {
     width: 97.5%;
     margin: 0 auto;
     padding: 15px 35px;
-    min-height: 25rem;
+    padding-bottom: 130px;
 }
 
 .assignments-section h2 {
     margin: 0;
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
+}
+
+.assignments-section ul {
+    padding: 15px;
 }
 
 .assignments-section ul li a {
@@ -70,12 +77,16 @@ body {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     box-sizing: border-box;
     background-color: var(--primary-color);
     border-radius: .5em;
     color: var(--accent1-color);
     text-align: center;
     padding: 15px;
+    min-height: 70px;
+    width: 100%;
 }
 
 footer a {
