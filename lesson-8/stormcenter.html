@@ -49,8 +49,7 @@
                         title="Only letters and at least 5 characters" required></label>
                 <label for="email">Email* <input type="email" name="email" id="email" required></label>
                 <label for="phone">Phone Number* <input type="tel" name="phone" id="phone" required></label>
-                <label for="zipcode">ZIP Code* <input type="number" name="zipcode" id="zipcode" pattern="[0-9]{1,5}"
-                        title="Please, insert only numbers"></label>
+                <label for="zipcode">ZIP Code* <input type="number" name="zipcode" id="zipcode"></label>
             </fieldset>
 
             <fieldset>
@@ -58,7 +57,7 @@
                 <label for="stormDate">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
                 <label for="stormType">Storm Type
                     <input list="stormTypeList" id="stormType" name="stormType">
-                    <datalist name="stormTypeList" id="stormTypeList">
+                    <datalist id="stormTypeList">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
                         <option value="Hurricane"></option>
