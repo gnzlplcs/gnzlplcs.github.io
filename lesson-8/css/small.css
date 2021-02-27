@@ -156,7 +156,7 @@ form label.top textarea {
     padding: .7rem;
     color: var(--color-dark1);
     background: whitesmoke;
-    width: 90vw;
+    width: 100%;
     max-width: 504px;
 }
 
@@ -182,7 +182,7 @@ form input.submitBtn {
     color: var(--color-dark1);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    margin: 2rem 2%;
     width: 96%;
     max-width: 504px;
 }
