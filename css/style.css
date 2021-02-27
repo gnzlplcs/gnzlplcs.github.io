@@ -47,7 +47,6 @@ body {
     background: linear-gradient(0deg, rgba(249,237,105,1) 0%, rgba(240,138,93,1) 100%);
     color: var(--primary-color);
     width: 97.5%;
-    height: 330px;
     margin: 0 auto;
     padding: 15px 35px;
 }
