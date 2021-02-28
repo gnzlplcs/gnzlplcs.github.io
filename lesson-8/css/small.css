@@ -177,6 +177,7 @@ form label#severity {
 }
 
 form input.submitBtn {
+    box-sizing: border-box;
     border: none;
     background-color: var(--color-accent3);
     color: var(--color-dark1);
@@ -187,8 +188,14 @@ form input.submitBtn {
     max-width: 504px;
 }
 
+form input.submitBtn:hover {
+    box-sizing: border-box;
+    background-color: var(--color-light2);
+    border: 1px solid var(--color-accent3);
+}
+
 form label.top input:required {
-    border-left: red solid 6px;
+    border-right: red solid 6px;
 }
 
 form label.top input:required:valid {
