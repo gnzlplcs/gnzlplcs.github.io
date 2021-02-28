@@ -58,7 +58,7 @@
                 <label class="top" for="stormDate">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
                 <label class="top" for="stormType">Storm Type
                     <input list="stormTypeList" id="stormType" name="stormType">
-                    <datalist id="stormTypeList">
+                    <datalist id="stormTypeList" aria-placeholder="Select one option">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
                         <option value="Hurricane"></option>
@@ -82,6 +82,7 @@
                 </label>
                 <div>Are you in danger?
                     <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
                     <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
                 </div>
             </fieldset>
