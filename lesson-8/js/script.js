@@ -25,3 +25,8 @@ WebFont.load({
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
+
+// Toggle nav 
+function toggle() {
+    document.getElementById('nav-menu').classList.toggle('hide');
+}
