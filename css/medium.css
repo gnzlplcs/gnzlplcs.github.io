@@ -1,6 +1,8 @@
 @media only screen and (min-width: 32.5em) {
     .header {
         text-align: center;
+        border-bottom-right-radius: .5em;
+        border-bottom-left-radius: .5rem;
     }
 
     .header img {
@@ -10,5 +12,10 @@
         float: right;
         margin-right: 15px;
         margin-top: 15px;
+    }
+
+    footer {
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5rem;
     }
 }
