@@ -194,7 +194,7 @@ main {
 
 .forecast-day {
     border: 1px solid transparent;
-    background-color: rgb(250, 250, 250);
+    background-color: #ffe494;
     text-align: center;
     color: var(--color-dark2);
 }
