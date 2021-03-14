@@ -36,7 +36,7 @@ fetch(requestURLweather)
     .then((response) => response.json())
     .then((jsonObject) => {
         console.log(jsonObject);
-        document.getElementById('temperature').textContent = jsonObject.main.temp.toFixed(0);
+        document.getElementById('temperature').textContent = `${jsonObject.weather[0].main}, ${jsonObject.main.temp.toFixed(0)}`;
         document.getElementById('max-temp').textContent = jsonObject.main.temp_max.toFixed(0);
         document.getElementById('min-temp').textContent = jsonObject.main.temp_min.toFixed(0);
         document.getElementById('humidity').textContent = jsonObject.main.humidity;
