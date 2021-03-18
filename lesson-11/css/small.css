@@ -245,7 +245,7 @@ main section:hover {
 
 .forecast-day {
     border: 1px solid transparent;
-    background-color: #ffe494;
+    background-color: #3dbefa;
     text-align: center;
     color: var(--color-dark2);
 }
