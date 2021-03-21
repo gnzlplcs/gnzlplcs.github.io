@@ -101,6 +101,14 @@
         grid-gap: 5px;
     }
 
+    #preston-events,
+    #sodaSprings-events,
+    #fishHaven-events {
+        max-width: 350px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+
     article {
         box-sizing: border-box;
         border: 3px solid #37323e;

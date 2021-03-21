@@ -354,23 +354,21 @@ fetch(pEventsRequestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == 'Preston') {
-                let card = document.createElement('section');
-                let divText = document.createElement('div');
+                let card = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Upcoming Events";
-                divText.appendChild(h2);
+                card.appendChild(h2);
                 for (let j = 0; j < towns[i].events.length; j++) {
                     let events = document.createElement('p');
                     events.textContent = towns[i].events[j];
-                    divText.appendChild(events);
+                    card.appendChild(events);
                 }
-                card.appendChild(divText);
                 document.getElementById('preston-events').appendChild(card);
             }
         }
     })
 
-    // ---------------Soda Springs Events JSON Request-----------------------
+// ---------------Soda Springs Events JSON Request-----------------------
 const ssEventsRequestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(ssEventsRequestURL)
@@ -381,23 +379,21 @@ fetch(ssEventsRequestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == 'Soda Springs') {
-                let card = document.createElement('section');
-                let divText = document.createElement('div');
+                let card = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Upcoming Events";
-                divText.appendChild(h2);
+                card.appendChild(h2);
                 for (let j = 0; j < towns[i].events.length; j++) {
                     let events = document.createElement('p');
                     events.textContent = towns[i].events[j];
-                    divText.appendChild(events);
+                    card.appendChild(events);
                 }
-                card.appendChild(divText);
                 document.getElementById('sodaSprings-events').appendChild(card);
             }
         }
     })
 
-    // ---------------Preston Events JSON Request-----------------------
+// ---------------Fish Haven Events JSON Request-----------------------
 const fhEventsRequestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(fhEventsRequestURL)
@@ -408,17 +404,15 @@ fetch(fhEventsRequestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == 'Fish Haven') {
-                let card = document.createElement('section');
-                let divText = document.createElement('div');
+                let card = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Upcoming Events";
-                divText.appendChild(h2);
+                card.appendChild(h2);
                 for (let j = 0; j < towns[i].events.length; j++) {
                     let events = document.createElement('p');
                     events.textContent = towns[i].events[j];
-                    divText.appendChild(events);
+                    card.appendChild(events);
                 }
-                card.appendChild(divText);
                 document.getElementById('fishHaven-events').appendChild(card);
             }
         }
