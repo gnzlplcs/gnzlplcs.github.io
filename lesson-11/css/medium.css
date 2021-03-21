@@ -89,11 +89,15 @@
         padding-left: 20px;
     }
 
-    #five-days {
+    /* #p-five-days,
+    #ss-five-days,
+    #fh-five-days {
         display: block;
-    }
+    } */
 
-    #forecast {
+    #p-forecast,
+    #ss-forecast,
+    #fh-forecast {
         grid-gap: 5px;
     }
 
@@ -101,7 +105,7 @@
         box-sizing: border-box;
         border: 3px solid #37323e;
     }
-    
+
     article h1 {
         padding: 20px 20px 0 20px;
         margin: 0;
@@ -134,7 +138,7 @@
     #contact-info h1 {
         grid-column: span 2;
     }
-    
+
     .contact-info {
         align-self: flex-end;
     }
@@ -151,13 +155,11 @@
     }
 
     /* CSS Gallery */
+    #gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
-#gallery-grid {
-    grid-template-columns: 1fr 1fr;
-}
-
-picture {
-    width: 100%;
-}
-
+    picture {
+        width: 100%;
+    }
 }

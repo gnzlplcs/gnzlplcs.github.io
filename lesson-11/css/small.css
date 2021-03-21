@@ -233,13 +233,17 @@ main section:hover {
     color: var(--color-light1);
 }
 
-#forecast {
+#p-forecast,
+#ss-forecast,
+#fh-forecast {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3px;
 }
 
-#forecast h1 {
+#p-forecast h1, 
+#ss-forecast h1,
+#fh-forecast h1 {
     grid-column: span 5;
 }
 
@@ -250,7 +254,9 @@ main section:hover {
     color: var(--color-dark2);
 }
 
-#five-days {
+#p-five-days,
+#ss-five-days,
+#fh-five-days {
     display: none;
 }
 

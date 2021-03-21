@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gonzalo Palacios">
-    <meta name="description" content="Preston Town Page">
+    <meta name="description" content="Soda Springs Town Today's Weather Page">
     <link rel="shortcut icon" href="images/sun-regular-96.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <title>Preston Town Page</title>
+    <title>Soda Springs Town Page</title>
 </head>
 
 <body>
@@ -33,9 +33,9 @@
         <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
         <ul id="nav-menu" class="hide">
             <li><a href="https://gnzlplcs.github.io/lesson-11/index.html">Home</a></li>
-            <li><a class="active" href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/preston.html">Preston</a></li>
+            <li><a class="active" href="#">Soda Springs</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
             <li><a href="https://gnzlplcs.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
             <li><a href="https://gnzlplcs.github.io/lesson-11/gallery.html">Gallery</a></li>
         </ul>
@@ -43,34 +43,35 @@
 
     <main>
         <div class="main-content">
-            <h1>Preston Town</h1>
+            <h1>Soda Springs Town</h1>
             <div class="heroimage">
                 <picture>
-                    <source srcset="images/pexels-alex-andrews-833192-medium.jpg"
+                    <source srcset="images/pexels-ruvim-miksanskiy-1438761-medium.jpg"
                         media="(min-width: 560px) and (max-width: 1023px)">
-                    <source srcset="images/pexels-alex-andrews-833192-large.jpg" media="(min-width: 1024px)">
-                    <img src="images/pexels-alex-andrews-833192-small.jpg" alt="A village cloudy landscape view">
+                    <source srcset="images/pexels-ruvim-miksanskiy-1438761-large.jpg" media="(min-width: 1024px)">
+                    <img src="images/pexels-ruvim-miksanskiy-1438761-small.jpg" alt="A village cloudy landscape view">
                 </picture>
                 <div class="weathersummary">
                     <h2>Weather Summary</h2>
                     <div class="inner-margin">
-                        <p>Currently: <span class="highlight"><span id="p-temperature"></span>°F</span></p>
-                        <p>Max/Min: <span class="highlight"><span id="p-max-temp">19</span>°F / <span
-                                    id="p-min-temp">19</span>°F</span></p>
-                        <p>Humidity: <span class="highlight"><span id="p-humidity"></span>%</span></p>
-                        <p>Wind: <span class="highlight"><span id="p-wind"></span> mph</span></p>
-                        <p>Wind chill: <span class="highlight" id="p-windchill"></span></p>
+                        <p>Currently: <span class="highlight"><span id="ss-temperature"></span>°F</span></p>
+                        <p>Max/Min: <span class="highlight"><span id="ss-max-temp">19</span>°F / <span
+                                    id="ss-min-temp">19</span>°F</span></p>
+                        <p>Humidity: <span class="highlight"><span id="ss-humidity"></span>%</span></p>
+                        <p>Wind: <span class="highlight"><span id="ss-wind"></span> mph</span></p>
+                        <p>Wind chill: <span class="highlight" id="ss-windchill"></span></p>
                     </div>
                     <div id="attribution">Powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></div>
                 </div>
             </div>
         </div>
-        
-        <div class="main-content" id="p-forecast">
-            <h1 id="p-five-days">5 Day Forecast</h1>
+
+        <div class="main-content" id="ss-forecast">
+            <h1 id="ss-five-days">5 Day Forecast</h1>
         </div>
-        
-        <div id="preston-events"></div> 
+
+        <div id="sodaSprings-events"></div> 
+
 
         <article class="main-content">
             <h1>Article</h1>
@@ -95,7 +96,6 @@
                 </div>
             </div>
         </article>
-
 
         <div class="main-content" id="contact-info">
             <h1>Contact information</h1>
