@@ -1,0 +1,101 @@
+{
+    "local_business": [{
+        "name": "Notaria Higa",
+        "description": "Notaria de Lima",
+        "address": {
+            "street": "Av. Canada",
+            "number": 3536,
+            "district": "San Luis",
+            "postal_code": "Lima 30"
+        },
+        "url": "https://www.notariahiga.com/",
+        "contact": {
+            "phone": 5114342060,
+            "email": "info@notariahiga.com"
+        }
+    }, {
+        "name": "Rodrigo, Elias & Medrano",
+        "description": "Estudio de Abogados",
+        "address": {
+            "street": "Av. San Felipe",
+            "number": 758,
+            "district": "Jesus Maria",
+            "postal_code": "Lima 15072"
+        },
+        "url": "https://www.estudiorodrigo.com/",
+        "contact": {
+            "phone": 5116191900,
+            "email": "contacto@estudiorodrigo.com"
+        }
+    }, {
+        "name": "Anita",
+        "description": "Casa de Cambio",
+        "address": {
+            "street": "Av. Primavera",
+            "number": 282,
+            "district": "Santiago de Surco",
+            "postal_code": "Lima 33"
+        },
+        "url": "http://www.casadecambioanita.com/",
+        "contact": {
+            "phone": 5113724006 ,
+            "email": "casadecambioanita@gmail.com"
+        }
+    }, {
+        "name": "Country Club El Bosque",
+        "description": "Centro de esparcimiento",
+        "address": {
+            "street": "Av. Julio Bayletti",
+            "number": 278,
+            "district": "San Borja",
+            "postal_code": "Lima 34"
+        },
+        "url": "http://www.elbosque.org.pe/",
+        "contact": {
+            "phone": 5112070670,
+            "email": "contacto@elbosque.org.pe"
+        }
+    }, {
+        "name": "XSport Gym",
+        "description": "Fitness Club",
+        "address": {
+            "street": "Av. Santiago de Surco",
+            "number": 3115,
+            "district": "Santiago de Surco",
+            "postal_code": "Lima 33"
+        },
+        "url": "https://www.xsportgym.pe/",
+        "contact": {
+            "phone": 5112603364,
+            "email": "info@xsportgym.pe"
+        }
+    }, {
+        "name": "Mirabus",
+        "description": "Turismo en la ciudad",
+        "address": {
+            "street": "Ca. Martir Jose Olaya",
+            "number": 100,
+            "district": "Miraflores",
+            "postal_code": "Lima 25"
+        },
+        "url": "https://www.mirabusperu.com/",
+        "contact": {
+            "phone": 5112426699,
+            "email": "info@mirabus.com"
+        }
+    }, {
+        "name": "Avis",
+        "description": "Car Rental Lima",
+        "address": {
+            "street": "Ca. Las Begonias",
+            "number": 385,
+            "district": "San Isidro",
+            "postal_code": "Lima 29"
+        },
+        "url": "https://www.avis.com/en/locations/pe/lima",
+        "contact": {
+            "phone": 5112076000,
+            "email": "lima@avis.com"
+        }
+    }]
+}
