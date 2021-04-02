@@ -1,7 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cabin+Condensed&family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    box-sizing: border-box;
+}
 
-/* font-family: 'Bangers', cursive;
-font-family: 'Cabin Condensed', sans-serif;
-font-family: 'Crimson Pro', serif; */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
-/* https://coolors.co/ff6700-ebebeb-c0c0c0-3a6ea5-004e98 */
+:root {
+    --accent-color: #ff6700;
+    --light1-color: #ebebeb;
+    --light2-color: #c0c0c0;
+    --dark1-color: #004e98;
+    --dark2-color: #3a6ea5;
+    --main-title-font: 'Bangers', cursive;
+    --subtitle-font: 'Cabin Condensed', sans-serif;
+    --plain-text-font: 'Crimson Pro', serif;
+}
+
+body {
+    font-family: var(--plain-text-font);
+    background-color: var(--light1-color);
+}
+
+/* -------Header---------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark1-color);
+    padding: 1rem;
+}
+
+div.logo {
+    border-radius: 50%;
+    background-color: var(--light1-color);
+    min-width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 559px){
+    div.logo {
+        display: none;
+    }
+}
+
+div.logo img {
+    width: 80px;
+}
+
+div.page-header {
+    color: var(--accent-color);
+    letter-spacing: 4px;
+    font-family: var(--subtitle-font);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+div.page-header h1 {
+    color: var(--light1-color);
+    font-family: var(--main-title-font);
+    font-size: 3rem;
+    margin: 0;
+}
+
+div.page-header p {
+    margin: 0;
+}

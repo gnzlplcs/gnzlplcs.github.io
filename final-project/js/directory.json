@@ -1,9 +1,9 @@
 {
     "local_business": [{
         "name": "Notaria Higa",
-        "description": "Notaria de Lima",
+        "description": "Notary Office",
         "address": {
-            "street": "Av. Canada",
+            "street": "Canada Avenue",
             "number": 3536,
             "district": "San Luis",
             "postal_code": "Lima 30"
@@ -15,9 +15,9 @@
         }
     }, {
         "name": "Rodrigo, Elias & Medrano",
-        "description": "Estudio de Abogados",
+        "description": "Law Firm",
         "address": {
-            "street": "Av. San Felipe",
+            "street": "San Felipe Avenue",
             "number": 758,
             "district": "Jesus Maria",
             "postal_code": "Lima 15072"
@@ -29,9 +29,9 @@
         }
     }, {
         "name": "Anita",
-        "description": "Casa de Cambio",
+        "description": "Exchange House",
         "address": {
-            "street": "Av. Primavera",
+            "street": "Primavera Avenue",
             "number": 282,
             "district": "Santiago de Surco",
             "postal_code": "Lima 33"
@@ -43,9 +43,9 @@
         }
     }, {
         "name": "Country Club El Bosque",
-        "description": "Centro de esparcimiento",
+        "description": "Relax Club",
         "address": {
-            "street": "Av. Julio Bayletti",
+            "street": "Julio Bayletti Avenue",
             "number": 278,
             "district": "San Borja",
             "postal_code": "Lima 34"
@@ -59,7 +59,7 @@
         "name": "XSport Gym",
         "description": "Fitness Club",
         "address": {
-            "street": "Av. Santiago de Surco",
+            "street": "Santiago de Surco Avenue",
             "number": 3115,
             "district": "Santiago de Surco",
             "postal_code": "Lima 33"
@@ -71,9 +71,9 @@
         }
     }, {
         "name": "Mirabus",
-        "description": "Turismo en la ciudad",
+        "description": "City Tour",
         "address": {
-            "street": "Ca. Martir Jose Olaya",
+            "street": "Martir Jose Olaya Street",
             "number": 100,
             "district": "Miraflores",
             "postal_code": "Lima 25"
@@ -85,9 +85,9 @@
         }
     }, {
         "name": "Avis",
-        "description": "Car Rental Lima",
+        "description": "Car Rental",
         "address": {
-            "street": "Ca. Las Begonias",
+            "street": "Las Begonias Street",
             "number": 385,
             "district": "San Isidro",
             "postal_code": "Lima 29"
@@ -111,7 +111,7 @@
     }, {
         "name": "Mistura Food Festival",
         "date": "September 10th",
-        "place": "Costa Verde",
+        "place": "Costa Verde Magdalena",
         "image": "mistura-festival.jpg"
     }]
 }
