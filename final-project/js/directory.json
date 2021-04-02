@@ -38,7 +38,7 @@
         },
         "url": "http://www.casadecambioanita.com/",
         "contact": {
-            "phone": 5113724006 ,
+            "phone": 5113724006,
             "email": "casadecambioanita@gmail.com"
         }
     }, {
@@ -97,5 +97,21 @@
             "phone": 5112076000,
             "email": "lima@avis.com"
         }
+    }],
+    "events": [{
+        "name": "Lima Anniversary",
+        "date": "January 18th",
+        "place": "Plaza Mayor",
+        "image": "lima-anniversary.jpg"
+    }, {
+        "name": "Militar Parade",
+        "date": "July 29th",
+        "place": "Brasil Avenue",
+        "image": "militar-parade.jpg"
+    }, {
+        "name": "Mistura Food Festival",
+        "date": "September 10th",
+        "place": "Costa Verde",
+        "image": "mistura-festival.jpg"
     }]
 }

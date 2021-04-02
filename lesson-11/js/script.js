@@ -119,7 +119,7 @@ fetch(homeRequestURL)
     })
 
 // ---------------JSON Request-----------------------
-let prestonCityID = 5604473;
+let prestonCityID = 5604473;    
 let sodaSpringsCityID = 5607916;
 let fishHavenCityID = 5585010;
 let appid = "96903c0c4a665e1829d511ed75451893";
