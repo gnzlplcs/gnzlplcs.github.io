@@ -127,6 +127,8 @@ nav ul li a {
 
 nav ul li a.active {
     background-color: var(--dark2-color);
+    border-bottom: 1px solid var(--dark2-color);
+
     color: var(--light1-color);
     filter: brightness(1.15);
 }
@@ -135,6 +137,8 @@ nav ul li a:hover {
     background-color: var(--accent-color);
     color: var(--light1-color);
     filter: brightness(1.15);
+    border-bottom: none;
+
 }
 
 nav ul.hide {
@@ -228,6 +232,7 @@ h3 {
     border-radius: 10px;
 }
 
+/* ---------------Forecast Weather */
 .forecastCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,7 +270,9 @@ h3 {
     margin: 0 auto;
 }
 
-#call-to-action {}
+#call-to-action {
+    margin-top: 1rem;
+}
 
 #call-to-action a {
     display: flex;
