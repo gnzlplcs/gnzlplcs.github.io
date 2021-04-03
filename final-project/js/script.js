@@ -35,6 +35,8 @@ fetch(upcEvURL)
             contactLink.textContent = `Call: ${business[i].contact.phone}`;
             localContact.appendChild(contactLink);
             siteLink.setAttribute('href', `${business[i].url}`);
+            siteLink.setAttribute('target', '_blank');
+            siteLink.setAttribute('rel', 'noreferrer');
             siteLink.textContent = 'Visit Site';
             localSite.appendChild(siteLink);
             businessCard.appendChild(localName);

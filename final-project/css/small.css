@@ -124,7 +124,6 @@ nav ul li a {
     color: var(--dark1-color);
 }
 
-
 nav ul li a.active {
     background-color: var(--dark2-color);
     border-bottom: 1px solid var(--dark2-color);
@@ -138,7 +137,6 @@ nav ul li a:hover {
     color: var(--light1-color);
     filter: brightness(1.15);
     border-bottom: none;
-
 }
 
 nav ul.hide {
