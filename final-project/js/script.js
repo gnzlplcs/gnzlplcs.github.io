@@ -121,14 +121,18 @@ fetch(requestURL)
         // --------Weather JSON--------------
         let weatherCard = document.createElement('section');
         let weatherTitle = document.createElement('h3');
+        let iconImg = document.createElement('img')
         let tempDiv = document.createElement('div');
         let descDiv = document.createElement('div');
         let humDiv = document.createElement('div');
         weatherTitle.textContent = "Current Weather";
+        iconImg.setAttribute('src', `https://openweathermap.org/img/wn/${jsonObject.current.weather[0].icon}@4x.png`);
+        iconImg.setAttribute('alt', `${jsonObject.current.weather[0].main} icon`) 
         tempDiv.textContent = `Temperature: ${jsonObject.current.temp.toFixed(0)}°C`;
         descDiv.textContent = `Condition: ${jsonObject.current.weather[0].main}`;
         humDiv.textContent = `Humidity: ${jsonObject.current.humidity}%`;
         weatherCard.appendChild(weatherTitle);
+        weatherCard.appendChild(iconImg);
         weatherCard.appendChild(tempDiv);
         weatherCard.appendChild(descDiv);
         weatherCard.appendChild(humDiv);
@@ -148,6 +152,7 @@ fetch(requestURL)
             let currentDay = new Date(jsonObject.daily[i + 1].dt * 1000);
             dayLabel.textContent = dayOfWeek[currentDay.getDay()];
             condIcon.setAttribute('src', `https://openweathermap.org/img/wn/${jsonObject.daily[i].weather[0].icon}@4x.png`);
+            condIcon.setAttribute('alt', `${jsonObject.daily[i].weather[0].main} icon`);
             tempDay.textContent = `${jsonObject.daily[i].temp.day.toFixed(0)}°C | ${jsonObject.daily[i].weather[0].main}`;
             forecastDay.appendChild(dayLabel);
             forecastDay.appendChild(condIcon);

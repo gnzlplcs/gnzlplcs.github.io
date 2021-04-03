@@ -273,8 +273,12 @@ h3 {
 }
 
 /* ---------------Footer Section---------------- */
-footer {
+#footer h3 {
+    padding: 3rem;
     background-color: var(--dark1-color);
+    font-family: var(--main-title-font);
+    color: var(--light1-color);
+    text-align: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

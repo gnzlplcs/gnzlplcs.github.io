@@ -36,4 +36,9 @@
         background-color: #3a6ea5;
         filter: brightness(1.25);
     }
+
+    .cards-locals {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .75rem;
+    }
 }
