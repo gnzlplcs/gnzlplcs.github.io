@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 :root {
@@ -22,6 +23,7 @@ html {
 body {
     font-family: var(--plain-text-font);
     background-color: var(--light1-color);
+    margin: 0 auto;
 }
 
 /* -------Header---------- */
@@ -44,7 +46,7 @@ div.logo {
     margin: 1rem;
 }
 
-@media only screen and (max-width: 559px){
+@media only screen and (max-width: 559px) {
     div.logo {
         display: none;
     }
@@ -55,7 +57,7 @@ div.logo img {
 }
 
 div.page-header {
-    color: var(--accent-color);
+    color: var(--light2-color);
     letter-spacing: 4px;
     font-family: var(--subtitle-font);
     font-size: 1.6rem;
@@ -71,4 +73,213 @@ div.page-header h1 {
 
 div.page-header p {
     margin: 0;
+}
+
+/* ------------------Nav Menu--------------- */
+nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff6700+1,d65900+100 */
+    background: rgb(255, 103, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6700', endColorstr='#d65900', GradientType=0);
+    /* IE6-9 */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--light1-color);
+    font-family: var(--subtitle-font);
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+nav .menu {
+    display: none;
+    letter-spacing: 2px;
+
+}
+
+nav ul {
+    background-color: var(--light2-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    font-family: var(--subtitle-font);
+    letter-spacing: 2px;
+    list-style: none;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-bottom: 1px solid var(--light2-color);
+    filter: brightness(90%);
+    color: var(--dark1-color);
+}
+
+
+nav ul li a.active {
+    background-color: var(--dark2-color);
+    color: var(--light1-color);
+    filter: brightness(1.15);
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--light1-color);
+    filter: brightness(1.15);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/* -----------Main Section------------- */
+main {
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: var(--dark2-color);
+    font-family: var(--subtitle-font);
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: .75rem;
+    border-bottom: 3px var(--accent-color) solid;
+}
+
+h3 {
+    margin: .75rem 0;
+    color: var(--dark1-color);
+    font-family: var(--main-title-font);
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+}
+
+.regular-cards {
+    display: grid;
+    margin: 1.5rem 2%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: var(--light1-color);
+    box-shadow: 14px 14px 33px #bababa,
+        -14px -14px 33px #ffffff;
+}
+
+.regular-cards a {
+    color: var(--dark2-color);
+}
+
+.regular-cards a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.description p,
+.membership p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.regular-cards section {
+    margin: 1rem 1.5%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #cdcdcd, #adadad);;
+    box-shadow: 8px 8px 16px #989898,
+        -8px -8px 16px #e8e8e8;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.upcoming-events section {
+    display: block;
+}
+
+.upcoming-events section div:first-child {
+    padding: .75rem;
+}
+
+.upcoming-events section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.forecastCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'title title title'
+        'day1 day2 day3';
+}
+
+.forecastCard h3 {
+    grid-area: title;
+}
+
+.forecastCard #day1 {
+    grid-area: day1;
+}
+
+.forecastCard #day2 {
+    grid-area: day2;
+}
+
+.forecastCard #day3 {
+    grid-area: day3;
+}
+
+.forecastCard img {
+    width: 100%;
+}
+
+.membership div {
+    margin: 0 auto;
+}
+
+#call-to-action {
+}
+
+#call-to-action a {
+    display: flex;
+    justify-items: center;
+}
+
+#call-to-action button {
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    color: var(--light1-color);
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+#call-to-action:hover {
+    filter: brightness(.9);
+}
+
+/* ---------------Footer Section---------------- */
+footer {
+    background-color: var(--dark1-color);
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

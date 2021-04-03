@@ -5,16 +5,54 @@ WebFont.load({
     }
 });
 
-// -----------Directory API Manipulation
+// ----------------Toggle Nav--------------
+function toggle() {
+    document.getElementById('nav-menu').classList.toggle('hide');
+}
+
+// **********************************************************
+// -----------Directory API Manipulation---------------------
 const upcEvURL = 'https://gnzlplcs.github.io/final-project/js/directory.json';
 
-// -------------Business Cards---------------
+// -------------Business Cards Homepage---------------
 fetch(upcEvURL)
     .then(response => response.json())
     .then(jsonObject => {
-        let businessCard = document.createElement('section');
+        let business = jsonObject.local_business;
+        for(let i = 0; i < 3; i++) {
+            let businessCard = document.createElement('section');
+            let localName = document.createElement('h3');
+            let localDesc = document.createElement('div');
+            let localAddress = document.createElement('div');
+            let localContact = document.createElement('div');
+            let contactLink = document.createElement('a');
+            let localSite = document.createElement('div');
+            let siteLink = document.createElement('a');
+            localName.textContent = business[i].name;
+            localDesc.textContent = business[i].description;
+            localAddress.textContent = `${business[i].address.number} ${business[i].address.street}, ${business[i].address.district}`;
+            contactLink.setAttribute('href', `tel:+${business[i].contact.phone}`);
+            contactLink.textContent = `Call: ${business[i].contact.phone}`;
+            localContact.appendChild(contactLink);
+            siteLink.setAttribute('href', `${business[i].url}`);
+            siteLink.textContent = 'Visit Business Site';
+            localSite.appendChild(siteLink);
+            businessCard.appendChild(localName);
+            businessCard.appendChild(localDesc);
+            businessCard.appendChild(localAddress);
+            businessCard.appendChild(localContact);
+            businessCard.appendChild(localSite);
+            document.querySelector('div.cards-locals').appendChild(businessCard);
+        };
+    })
+
+// -------------Business Cards Directory---------------
+fetch(upcEvURL)
+    .then(response => response.json())
+    .then(jsonObject => {
         let business = jsonObject.local_business;
         business.forEach(local => {
+            let businessCard = document.createElement('section');
             let localName = document.createElement('h3');
             let localDesc = document.createElement('div');
             let localAddress = document.createElement('div');
@@ -36,17 +74,17 @@ fetch(upcEvURL)
             businessCard.appendChild(localAddress);
             businessCard.appendChild(localContact);
             businessCard.appendChild(localSite);
+            document.querySelector('div.cards-locals-dir').appendChild(businessCard);
         });
-        document.querySelector('div.cards-locals').appendChild(businessCard);
     });
 
 // ----------Upcoming Events---------------
 fetch(upcEvURL)
     .then(response => response.json())
     .then(jsonObject => {
-        let upcEvCard = document.createElement('section');
         let events = jsonObject.events;
         events.forEach(cityEvent => {
+            let upcEvCard = document.createElement('section');
             let textContainer = document.createElement('div');
             let imgContainer = document.createElement('div');
             let upcEvTitle = document.createElement('h3');
@@ -64,8 +102,8 @@ fetch(upcEvURL)
             imgContainer.appendChild(upcEvImg);
             upcEvCard.appendChild(textContainer);
             upcEvCard.appendChild(imgContainer);
+            document.querySelector('div.upcoming-events').appendChild(upcEvCard);
         });
-        document.querySelector('div.upcoming-events').appendChild(upcEvCard);
     });
 
 // *********************************************
@@ -86,7 +124,7 @@ fetch(requestURL)
         let tempDiv = document.createElement('div');
         let descDiv = document.createElement('div');
         let humDiv = document.createElement('div');
-        weatherTitle.textContent = 'Weather Summary';
+        weatherTitle.textContent = "Current Weather";
         tempDiv.textContent = `Temperature: ${jsonObject.current.temp.toFixed(0)}°C`;
         descDiv.textContent = `Condition: ${jsonObject.current.weather[0].main}`;
         humDiv.textContent = `Humidity: ${jsonObject.current.humidity}%`;
@@ -97,7 +135,13 @@ fetch(requestURL)
 
         // --------------Forecast JSON--------------
         let forecastCard = document.createElement('section');
+        forecastCard.className = 'forecastCard';
+        let forecastTitle = document.createElement('h3');
+        forecastTitle.textContent = '3-day Forecast';
+        forecastCard.appendChild(forecastTitle);
         for (let i = 0; i < 3; i++) {
+            let forecastDay = document.createElement('div');
+            forecastDay.setAttribute('id', `day${i+1}`);
             let dayLabel = document.createElement('div');
             let condIcon = document.createElement('img');
             let tempDay = document.createElement('div');
@@ -105,11 +149,11 @@ fetch(requestURL)
             dayLabel.textContent = dayOfWeek[currentDay.getDay()];
             condIcon.setAttribute('src', `https://openweathermap.org/img/wn/${jsonObject.daily[i].weather[0].icon}@4x.png`);
             tempDay.textContent = `${jsonObject.daily[i].temp.day.toFixed(0)}°C | ${jsonObject.daily[i].weather[0].main}`;
-            forecastCard.appendChild(dayLabel);
-            forecastCard.appendChild(condIcon);
-            forecastCard.appendChild(tempDay);
-        }
-
+            forecastDay.appendChild(dayLabel);
+            forecastDay.appendChild(condIcon);
+            forecastDay.appendChild(tempDay);
+            forecastCard.appendChild(forecastDay);
+        };
         document.querySelector('div.weather').appendChild(weatherCard);
         document.querySelector('div.weather').appendChild(forecastCard);
     });
