@@ -21,7 +21,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6700', endColorstr='#d65900', GradientType=0);
         /* IE6-9 */
     }
-    
+
     nav ul li a {
         height: 54.4px;
         border-bottom: none;
@@ -37,8 +37,17 @@
         filter: brightness(1.25);
     }
 
+    .hero-image img {
+        border-radius: 0 0 5px 5px;
+    }
+
     .cards-locals {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: .75rem;
+        grid-gap: .5rem;
+    }
+
+    .cards-locals h2,
+    .weather h2 {
+        grid-column: span 3;
     }
 }
