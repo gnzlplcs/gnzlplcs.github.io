@@ -98,6 +98,7 @@ fetch(upcEvURL)
             upcEvPlace.textContent = `Where: ${cityEvent.place}`;
             upcEvImg.setAttribute('src', `assets/${cityEvent.image}`);
             upcEvImg.setAttribute('alt', `${cityEvent.name} Image`);
+            upcEvImg.setAttribute('width', '760');
             textContainer.appendChild(upcEvTitle);
             textContainer.appendChild(upcEvDate);
             textContainer.appendChild(upcEvPlace);
