@@ -183,17 +183,14 @@ h3 {
     color: var(--dark2-color);
     font-family: var(--subtitle-font);
     letter-spacing: 2px;
-    
+    font-size: 1.2rem;
 }
 
-.regular-cards a:hover {
+.cards-locals a:hover {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
-.regular-cards div:nth-child(3, 4) {
-    padding: .75rem;
-}
 
 .description p,
 .membership p {
@@ -212,6 +209,10 @@ h3 {
         -8px -8px 16px #e8e8e8;
     font-size: 1.4rem;
     text-align: center;
+}
+
+.cards-locals section {
+    display: grid;
 }
 
 .upcoming-events section {
