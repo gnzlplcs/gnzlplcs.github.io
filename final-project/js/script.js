@@ -10,8 +10,14 @@ function toggle() {
     document.getElementById('nav-menu').classList.toggle('hide');
 }
 
-// **********************************************************
-// -----------Directory API Manipulation---------------------
+// -------------Last Modification------------
+const lastModDate = new Date(document.lastModified);
+const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const writtenMonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+document.getElementById('last-modification').innerHTML = `Last update: ${dayOfWeek[lastModDate.getDay()]}, ${writtenMonth[lastModDate.getMonth()]} ${lastModDate.getDate()} ${lastModDate.getFullYear()}`;
+
+// ******************************************************
+// -----------Directory API Manipulation-----------------
 const upcEvURL = 'https://gnzlplcs.github.io/final-project/js/directory.json';
 
 // -------------Business Cards Homepage---------------
@@ -19,7 +25,7 @@ fetch(upcEvURL)
     .then(response => response.json())
     .then(jsonObject => {
         let business = jsonObject.local_business;
-        for(let i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             let businessCard = document.createElement('section');
             let localName = document.createElement('h3');
             let localDesc = document.createElement('div');
@@ -115,7 +121,6 @@ const lat = -12.04318;
 const lon = -77.02824;
 const apiKey = "96903c0c4a665e1829d511ed75451893";
 const requestURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,hourly&appid=${apiKey}`;
-const dayOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
 fetch(requestURL)
     .then(response => response.json())
@@ -130,7 +135,7 @@ fetch(requestURL)
         let humDiv = document.createElement('div');
         weatherTitle.textContent = "Current Weather";
         iconImg.setAttribute('src', `https://openweathermap.org/img/wn/${jsonObject.current.weather[0].icon}@4x.png`);
-        iconImg.setAttribute('alt', `${jsonObject.current.weather[0].main} icon`) 
+        iconImg.setAttribute('alt', `${jsonObject.current.weather[0].main} icon`)
         tempDiv.textContent = `Temperature: ${jsonObject.current.temp.toFixed(0)}°C`;
         descDiv.textContent = `Condition: ${jsonObject.current.weather[0].main}`;
         humDiv.textContent = `Humidity: ${jsonObject.current.humidity}%`;
