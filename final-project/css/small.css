@@ -279,12 +279,14 @@ h3 {
 
 #call-to-action button {
     padding: 1rem 2rem;
-    background-color: var(--accent-color);
-    border-radius: 15px;
     color: #001A33;
     text-align: center;
     font-size: 2rem;
-
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ff6e00, #e65d00);
+    box-shadow: 8px 8px 16px #989898,
+        -8px -8px 16px #e8e8e8;
 }
 
 #call-to-action:hover {
