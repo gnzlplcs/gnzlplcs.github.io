@@ -8,13 +8,17 @@
         display: inline;
     }
 
+    button {
+        display: block;
+    }
+
     .cards-locals {
         grid-template-columns: 1fr 1fr;
         grid-gap: .75rem;
     }
 
     .cards-locals h2,
-    .weather h2 {
+    .weather h2{
         grid-column: span 2;
     }
 
@@ -22,7 +26,6 @@
         grid-template-columns: 2fr 3fr;
         grid-gap: .75rem;
     }
-
 
     footer .footer {
         grid-template-areas: 'contact icons'
@@ -54,5 +57,14 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
+    }
+
+    .cards-locals-dir {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .75rem;
+    }
+
+    .cards-locals-dir h2 {
+        grid-column: span 2;
     }
 }

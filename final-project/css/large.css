@@ -41,13 +41,15 @@
         border-radius: 0 0 5px 5px;
     }
 
-    .cards-locals {
+    .cards-locals,
+    .cards-locals-dir {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: .5rem;
     }
 
     .cards-locals h2,
-    .weather h2 {
+    .weather h2,
+    .cards-locals-dir h2 {
         grid-column: span 3;
     }
 }

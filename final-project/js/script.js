@@ -78,9 +78,13 @@ fetch(upcEvURL)
             contactLink.textContent = `Call: ${local.contact.phone}`;
             localContact.appendChild(contactLink);
             siteLink.setAttribute('href', `${local.url}`);
-            siteLink.textContent = 'Visit Business Site';
+            siteLink.setAttribute('target', '_blank');
+            siteLink.setAttribute('rel', 'noreferrer');
+            siteLink.textContent = 'Visit Site';
             localSite.appendChild(siteLink);
             localImg.setAttribute('src', `assets/${local.image}`);
+            localImg.setAttribute('alt', `${local.name} image`);
+            localImg.setAttribute('width', '480');
             infoDiv.appendChild(localName);
             infoDiv.appendChild(localDesc);
             infoDiv.appendChild(localAddress);
@@ -177,8 +181,3 @@ fetch(requestURL)
         document.querySelector('div.weather').appendChild(weatherCard);
         document.querySelector('div.weather').appendChild(forecastCard);
     });
-
-// ------------Directory Toogle View-------------------
-function dirToggle() {
-    document.getElementById('nav-menu').classList.toggle('hide');
-}

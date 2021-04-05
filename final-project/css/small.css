@@ -217,15 +217,18 @@ h3 {
     display: grid;
 }
 
-.upcoming-events section {
+.upcoming-events section,
+.cards-locals-dir section {
     display: block;
 }
 
-.upcoming-events section div:first-child {
+.upcoming-events section div:first-child,
+.cards-locals-dir section div:first-child {
     padding: .75rem;
 }
 
-.upcoming-events section img {
+.upcoming-events section img,
+.cards-locals-dir section img {
     width: 100%;
     border-radius: 10px;
 }
