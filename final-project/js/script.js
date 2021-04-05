@@ -61,6 +61,8 @@ fetch(upcEvURL)
         let business = jsonObject.local_business;
         business.forEach(local => {
             let businessCard = document.createElement('section');
+            let infoDiv = document.createElement('div');
+            let imgDiv = document.createElement('div');
             let localName = document.createElement('h3');
             let localDesc = document.createElement('div');
             let localAddress = document.createElement('div');
@@ -68,6 +70,7 @@ fetch(upcEvURL)
             let contactLink = document.createElement('a');
             let localSite = document.createElement('div');
             let siteLink = document.createElement('a');
+            let localImg = document.createElement('img');
             localName.textContent = local.name;
             localDesc.textContent = local.description;
             localAddress.textContent = `${local.address.number} ${local.address.street}, ${local.address.district}`;
@@ -77,11 +80,15 @@ fetch(upcEvURL)
             siteLink.setAttribute('href', `${local.url}`);
             siteLink.textContent = 'Visit Business Site';
             localSite.appendChild(siteLink);
-            businessCard.appendChild(localName);
-            businessCard.appendChild(localDesc);
-            businessCard.appendChild(localAddress);
-            businessCard.appendChild(localContact);
-            businessCard.appendChild(localSite);
+            localImg.setAttribute('src', `assets/${local.image}`);
+            infoDiv.appendChild(localName);
+            infoDiv.appendChild(localDesc);
+            infoDiv.appendChild(localAddress);
+            infoDiv.appendChild(localContact);
+            infoDiv.appendChild(localSite);
+            imgDiv.appendChild(localImg);
+            businessCard.appendChild(infoDiv);
+            businessCard.appendChild(imgDiv);
             document.querySelector('div.cards-locals-dir').appendChild(businessCard);
         });
     });
@@ -170,3 +177,8 @@ fetch(requestURL)
         document.querySelector('div.weather').appendChild(weatherCard);
         document.querySelector('div.weather').appendChild(forecastCard);
     });
+
+// ------------Directory Toogle View-------------------
+function dirToggle() {
+    document.getElementById('nav-menu').classList.toggle('hide');
+}
