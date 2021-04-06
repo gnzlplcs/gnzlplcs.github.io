@@ -266,9 +266,14 @@ h3 {
     font-family: var(--subtitle-font);
 }
 
-/* ------------Membership section */
+/* ------------Membership section---------- */
 .membership div {
     margin: 0 auto;
+}
+
+.membership img {
+    display: flex;
+    justify-self: center;
 }
 
 #call-to-action {
