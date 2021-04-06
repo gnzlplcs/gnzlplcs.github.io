@@ -85,6 +85,7 @@ fetch(upcEvURL)
             localImg.setAttribute('src', `assets/${local.image}`);
             localImg.setAttribute('alt', `${local.name} image`);
             localImg.setAttribute('width', '480');
+            localImg.setAttribute('loading', 'lazy');
             infoDiv.appendChild(localName);
             infoDiv.appendChild(localDesc);
             infoDiv.appendChild(localAddress);
@@ -116,6 +117,7 @@ fetch(upcEvURL)
             upcEvImg.setAttribute('src', `assets/${cityEvent.image}`);
             upcEvImg.setAttribute('alt', `${cityEvent.name} Image`);
             upcEvImg.setAttribute('width', '760');
+            upcEvImg.setAttribute('loading', 'lazy');
             textContainer.appendChild(upcEvTitle);
             textContainer.appendChild(upcEvDate);
             textContainer.appendChild(upcEvPlace);

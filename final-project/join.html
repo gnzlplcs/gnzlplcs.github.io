@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="css/large.css">
     <title>Join us</title>
     <meta property="og:title" content="Join us" />
-	<meta property="og:description" content="Joining Page. Be a partner and get offers and discounts." />
-	<meta property="og:url" content="https://gnzlplcs.github.io/final-project/join.html" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:image" content="https://gnzlplcs.github.io/final-project/assets/pagelogo512.svg" />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Join us" />
+    <meta property="og:description"
+        content="Joining Page. Be a partner and get offers and discounts." />
+    <meta property="og:url" content="https://gnzlplcs.github.io/final-project/join.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image"
+        content="https://gnzlplcs.github.io/final-project/assets/pagelogo512.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Join us" />
 </head>
 
 <body>
@@ -48,10 +50,36 @@
     <main>
         <div class="hero-image">
             <picture>
-                <source srcset="assets/lima-peru1024.jpg" media="(min-width: 540px) and (max-width: 1023px)">
-                <source srcset="assets/lima-peru1600.jpg" media="(min-width: 1024px)">
-                <img src="assets/lima-peru540.jpg" alt="Lima coast landscape view from the sky">
+                <source srcset="assets/catedral-lima760.jpg"
+                    media="(min-width: 540px) and (max-width: 1023px)">
+                <source srcset="assets/catedral-lima1024.jpg" media="(min-width: 1024px)">
+                <img src="assets/catedral-lima540.jpg" loading='lazy'
+                    alt="Lima Cathedral view from the Plaza Mayor" width="540">
             </picture>
+        </div>
+
+        <div class="regular-cards form-card">
+            <h2>Joining form</h2>
+            <form action="thanks.html" method="GET">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top" for="fname">First name* <input type="text" name="fname"
+                            id="fname" pattern=".{5,}"
+                            title="Only letters and at least 5 characters" required></label>
+                    <label class="top" for="lname">Last name* <input type="text" name="lname"
+                            id="lname" pattern=".{5,}"
+                            title="Only letters and at least 5 characters" required></label>
+                    <label class="top" for="email">Email* <input type="email" name="email"
+                            id="email" placeholder="email@email.com" required></label>
+                    <label class="top" for="phone">Phone Number* <input type="tel" name="phone"
+                            id="phone" required></label>
+                    <label class="top" for="zipcode">ZIP Code* <input type="number" name="zipcode"
+                            id="zipcode" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                </fieldset>
+            </form>
         </div>
 
     </main>
@@ -60,7 +88,7 @@
         <div class="footer">
             <div class="contact-info">
                 <div class="contact-email"><img src="assets/bxs-envelope.svg" alt="email icon">
-                        <p><a href="mailto:hello@limabusiness.info">hello@limabusiness.info</a></p>
+                    <p><a href="mailto:hello@limabusiness.info">hello@limabusiness.info</a></p>
                 </div>
                 <div class="contact-phone"><img src="assets/bxs-phone.svg" alt="phone icon">
                     <p><a href="tel:1-800-LIMAB">1-800-LIMAB</a></p>
@@ -68,20 +96,27 @@
             </div>
 
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" rel="noreferrer"><img src="assets/bxl-facebook-circle.svg" alt="facebook-icon"></a>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="assets/bxl-instagram.svg" alt="instagram-icon"></a>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="assets/bxl-twitter.svg" alt="twitter-icon"></a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-facebook-circle.svg" alt="facebook-icon"></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-instagram.svg" alt="instagram-icon"></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-twitter.svg" alt="twitter-icon"></a>
             </div>
 
             <div class="copyright">
                 Lima Business SA © 2021<br>
-                Gonzalo Palacios | Lima, Peru | <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer">BYU Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/" target="_blank">Assignments site</a><br>
+                Gonzalo Palacios | Lima, Peru | <a href="https://www.byui.edu/online"
+                    target="_blank" rel="noreferrer">BYU Idaho Online Learning</a> | <a
+                    href="https://gnzlplcs.github.io/" target="_blank" rel="noreferrer">Assignments
+                    site</a><br>
                 <span id="last-modification"></span>
             </div>
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" rel="preload"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" rel="preload">
+    </script>
     <script src="js/script.js"></script>
 </body>
 
