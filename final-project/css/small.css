@@ -125,7 +125,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    background-color: var(--dark2-color);
+    background-color: rgba(0, 0, 0, .15);
     border-bottom: 1px solid var(--dark2-color);
 
     color: var(--light1-color);
@@ -299,6 +299,89 @@ h3 {
 
 #call-to-action:hover {
     filter: brightness(.9);
+}
+
+/* ------------Form------------------- */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--light2-color);
+    border-radius: 10px;
+    padding: .5rem 3%;
+}
+
+form legend {
+    color: var(--dark1-color);
+    padding: .2rem .4rem;
+    border-radius: 5px;
+}
+
+form label.top,
+form label.sbs,
+form div {
+    box-sizing: border-box;
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-dark1);
+    font-size: .8rem;
+
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--color-dark1);
+    border-radius: 4px;
+    padding: .7rem;
+    color: var(--color-dark1);
+    background: whitesmoke;
+    width: 100%;
+    max-width: 504px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: var(--color-dark1);
+
+}
+
+#stormSeverity {
+    width: 100%;
+    max-width: 504px;
+}
+
+form label#severity {
+    margin-top: .7rem;
+}
+
+form input.submitBtn {
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--color-accent3);
+    color: var(--color-dark1);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 2%;
+    width: 96%;
+    max-width: 504px;
+}
+
+form input.submitBtn:hover {
+    box-sizing: border-box;
+    background-color: var(--color-light2);
+    border: 1px solid var(--color-accent3);
+}
+
+form label.top input:required {
+    border-right: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }
 
 /* ---------------Footer Section---------------- */
