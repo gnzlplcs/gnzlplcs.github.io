@@ -122,6 +122,38 @@
         "image": "mistura-festival.jpg"
     }],
     "gallery": [{
-        "image-1": "image.jpg"
+        "image1": "image1.jpg",
+        "image2": "image2.jpg",
+        "image3": "image3.jpg",
+        "image4": "image4.jpg",
+        "image5": "image5.jpg",
+        "image6": "image6.jpg",
+        "image7": "image7.jpg",
+        "image8": "image8.jpg",
+        "image9": "image9.jpg",
+        "image10": "image10.jpg",
+        "image11": "image11.jpg",
+        "image12": "image12.jpg"
+    }],
+    "directors": [{
+        "name": "Pamela Pérez",
+        "position": "CEO Founder",
+        "contact": "perezvp@limabusiness.info",
+        "image": "perezvp-profile.jpg"
+    }, {
+        "name": "Julián Camino",
+        "position": "Operations Manager",
+        "contact": "palaciosjg@limabusiness.info",
+        "image": "caminojg-profile.jpg"
+    }, {
+        "name": "Fabiola Manrique",
+        "position": "Customer Service Manager",
+        "contact": "manriquefx@limabusiness.info",
+        "image": "manriquefx-profile.jpg"
+    }, {
+        "name": "Sebastián Quisiyupanqui",
+        "position": "Customer Service Manager",
+        "contact": "manriquefx@limabusiness.info",
+        "image": "quisiyupanquisx-profile.png"
     }]
 }

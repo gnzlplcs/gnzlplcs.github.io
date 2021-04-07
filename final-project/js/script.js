@@ -184,6 +184,13 @@ fetch(requestURL)
         document.querySelector('div.weather').appendChild(forecastCard);
     });
 
+// -------------Board directors JSON----------------
+fetch(upcEvURL)
+.then(response => response.json())
+.then(jsonObject => {
+    console.log(jsonObject);
+})
+
 const images = document.querySelectorAll('img');
 const config = {
     rootMargin: '0px 0px 50px 0px',
