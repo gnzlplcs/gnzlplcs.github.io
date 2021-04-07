@@ -205,3 +205,8 @@ let observer = new IntersectionObserver(function (entries, self) {
 images.forEach(image => {
     observer.observe(image);
 });
+
+function toggleCard() {
+    let gridView = document.getElementsByClassName('cards-locals-dir')[0];
+    gridView.toggle.style.display = 'block';
+}

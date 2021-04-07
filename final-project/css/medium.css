@@ -12,19 +12,23 @@
         display: block;
     }
 
-    .cards-locals {
+    .cards-locals{
         grid-template-columns: 1fr 1fr;
         grid-gap: .75rem;
     }
 
     .cards-locals h2,
-    .weather h2{
+    .weather h2 {
         grid-column: span 2;
     }
 
     .weather {
         grid-template-columns: 2fr 3fr;
         grid-gap: .75rem;
+    }
+
+    .hideCard {
+        display: inline;
     }
 
     footer .footer {
@@ -59,12 +63,14 @@
         align-items: center;
     }
 
-    .cards-locals-dir {
+    .cards-locals-dir,
+    .membership-cards {
         grid-template-columns: 1fr 1fr;
         grid-gap: .75rem;
     }
 
-    .cards-locals-dir h2 {
+    .cards-locals-dir h2,
+    .membership-cards h2 {
         grid-column: span 2;
     }
 }
