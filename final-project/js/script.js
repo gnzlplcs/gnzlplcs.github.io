@@ -196,46 +196,37 @@ fetch(upcEvURL)
             let dirPosition = document.createElement('div');
             let dirProfImg = document.createElement('img');
             let dirContact = document.createElement('div');
-            let dirMail = document.createElement('a')
             dirName.textContent = director.name;
             dirPosition.textContent = director.position;
             dirProfImg.setAttribute('src', `assets/${director.image}`);
             dirProfImg.setAttribute('alt', `${director.position}`);
             dirProfImg.setAttribute('width', '540');
-            dirMail.setAttribute('href', `mailto:${director.contact}`);
-            dirMail.textContent = `Email: ${director.contact}`;
-            dirContact.appendChild(dirMail);
             dirSection.appendChild(dirName);
             dirSection.appendChild(dirPosition);
             dirSection.appendChild(dirProfImg);
-            dirSection.appendChild(dirMail);
             document.querySelector('div.board-directors').appendChild(dirSection);
         })
     })
 
-const images = document.querySelectorAll('img');
-const config = {
-    rootMargin: '0px 0px 50px 0px',
-    threshold: 0
-};
-let loaded = 0;
+// // ------------Intersection observer---------------
+// const images = document.querySelectorAll('img');
+// const config = {
+//     rootMargin: '0px 0px 50px 0px',
+//     threshold: 0
+// };
+// let loaded = 0;
 
-let observer = new IntersectionObserver(function (entries, self) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // console.log(`Image ${entry.target.src} is in the viewport!`);
-            preloadImage(entry.target);
-            // Stop watching and load the image
-            self.unobserve(entry.target);
-        }
-    });
-}, config);
+// let observer = new IntersectionObserver(function (entries, self) {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             // console.log(`Image ${entry.target.src} is in the viewport!`);
+//             preloadImage(entry.target);
+//             // Stop watching and load the image
+//             self.unobserve(entry.target);
+//         }
+//     });
+// }, config);
 
-images.forEach(image => {
-    observer.observe(image);
-});
-
-function toggleCard() {
-    let gridView = document.getElementsByClassName('cards-locals-dir')[0];
-    gridView.toggle.style.display = 'block';
-}
+// images.forEach(image => {
+//     observer.observe(image);
+// })

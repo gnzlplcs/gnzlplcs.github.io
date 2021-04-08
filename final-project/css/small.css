@@ -188,7 +188,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-.cards-locals a:hover {
+.regular-cards a:hover {
     color: var(--accent-color);
     text-decoration: underline;
 }
@@ -213,12 +213,17 @@ h3 {
     text-align: center;
 }
 
-.cards-locals section {
+.regular-cards iframe {
+    width: 100%;
+}
+
+.cards-locals section,
+.board-directors section  {
     display: grid;
 }
 
 .upcoming-events section,
-.cards-locals-dir section {
+.cards-locals-dir section{
     display: block;
 }
 
@@ -228,7 +233,8 @@ h3 {
 }
 
 .upcoming-events section img,
-.cards-locals-dir section img {
+.cards-locals-dir section img,
+.board-directors section img {
     width: 100%;
     border-radius: 10px;
 }
@@ -340,7 +346,8 @@ form label.top {
 }
 
 form label.top input,
-form label.top select{
+form label.top select,
+form label.top textarea {
     -webkit-appearance: none;
     font-family: var(--plain-text-font);
     box-sizing: border-box;
@@ -356,7 +363,8 @@ form label.top select{
 }
 
 form label.top input:focus,
-form label.top select:focus {
+form label.top select:focus,
+form label.top textarea:focus {
     background-color: rgba(255, 102, 0,.1);
 }
 

@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="css/large.css">
     <title>Contact</title>
     <meta property="og:title" content="Contact" />
-	<meta property="og:description" content="Contact Page. Reach out us for more information and support." />
-	<meta property="og:url" content="https://gnzlplcs.github.io/final-project/contact.html" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:image" content="https://gnzlplcs.github.io/final-project/assets/pagelogo512.svg" />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Contact" />
+    <meta property="og:description"
+        content="Contact Page. Reach out us for more information and support." />
+    <meta property="og:url" content="https://gnzlplcs.github.io/final-project/contact.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image"
+        content="https://gnzlplcs.github.io/final-project/assets/pagelogo512.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Contact" />
 </head>
 
 <body>
@@ -46,15 +48,41 @@
     </nav>
 
     <main>
-        <div class="hero-image">
-            <picture>
-                <source srcset="assets/lima-peru1024.jpg" media="(min-width: 540px) and (max-width: 1023px)">
-                <source srcset="assets/lima-peru1600.jpg" media="(min-width: 1024px)">
-                <img src="assets/lima-peru540.jpg" alt="Lima coast landscape view from the sky">
-            </picture>
-        </div>
+        <div class="regular-cards membership">
+            <h2>Contact us</h2>
+            <form action="thanks.html" method="GET">
+                <fieldset>
+                    <legend>Fill the fields</legend>
+                    <label class="top" for="fname">Name<input type="text" name="fname" id="fname"
+                            pattern=".{5,}" title="Only letters and at least 5 characters"
+                            required></label>
+                    <label class="top" for="phone">Phone<input type="tel" name="phone"
+                            id="phone"></label>
 
-        <div class="regular-cards board-directors"></div>
+                    <label class="top" for="email">Email* <input type="email" name="email"
+                            id="email" placeholder="email@email.com" required></label>
+                    <label class="top" for="textfield">Insert a comment here
+                    <textarea name="textfield" id="textfield" cols="30" rows="10"></textarea></label>
+                </fieldset>
+                <div id="call-to-action">
+                    <input type="submit" value="Send comments">
+            </div>
+            </form>
+        </div>
+        <div class="regular-cards board-directors">
+            <h2>Board Directors</h2>
+        </div>
+        <div class="regular-cards description">
+            <h2>Visit us </h2>
+            <p style="text-align: center;">300 Berlin Street, Miraflores</p>
+
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8829933071975!2d-77.03979898509601!3d-12.120157491418503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8229039b409%3A0xc73260cb9aecd5f8!2sCalle%20Berlin%2C%20Miraflores%2015074!5e0!3m2!1sen!2spe!4v1617849986960!5m2!1sen!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
 
     </main>
 
@@ -62,7 +90,7 @@
         <div class="footer">
             <div class="contact-info">
                 <div class="contact-email"><img src="assets/bxs-envelope.svg" alt="email icon">
-                        <p><a href="mailto:hello@limabusiness.info">hello@limabusiness.info</a></p>
+                    <p><a href="mailto:hello@limabusiness.info">hello@limabusiness.info</a></p>
                 </div>
                 <div class="contact-phone"><img src="assets/bxs-phone.svg" alt="phone icon">
                     <p><a href="tel:1-800-LIMAB">1-800-LIMAB</a></p>
@@ -72,21 +100,25 @@
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank" rel="noreferrer"><img
                         src="assets/bxl-facebook-circle.svg" alt="facebook-icon" width="45"></a>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="assets/bxl-instagram.svg"
-                        alt="instagram-icon" width="45"></a>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="assets/bxl-twitter.svg"
-                        alt="twitter-icon" width="45"></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-instagram.svg" alt="instagram-icon" width="45"></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-twitter.svg" alt="twitter-icon" width="45"></a>
             </div>
 
             <div class="copyright">
                 Lima Business SA © 2021<br>
-                Gonzalo Palacios | Lima, Peru | <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer">BYU Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/" target="_blank" rel="noreferrer">Assignments site</a><br>
+                Gonzalo Palacios | Lima, Peru | <a href="https://www.byui.edu/online"
+                    target="_blank" rel="noreferrer">BYU Idaho Online Learning</a> | <a
+                    href="https://gnzlplcs.github.io/" target="_blank" rel="noreferrer">Assignments
+                    site</a><br>
                 <span id="last-modification"></span>
             </div>
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" rel="preload"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" rel="preload">
+    </script>
     <script src="js/script.js"></script>
 </body>
 
