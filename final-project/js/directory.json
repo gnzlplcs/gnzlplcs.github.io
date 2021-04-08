@@ -127,13 +127,7 @@
         "image3": "image3.jpg",
         "image4": "image4.jpg",
         "image5": "image5.jpg",
-        "image6": "image6.jpg",
-        "image7": "image7.jpg",
-        "image8": "image8.jpg",
-        "image9": "image9.jpg",
-        "image10": "image10.jpg",
-        "image11": "image11.jpg",
-        "image12": "image12.jpg"
+        "image6": "image6.jpg"
     }],
     "directors": [{
         "name": "Pamela Pérez",
@@ -152,8 +146,8 @@
         "image": "manriquefx-profile.jpg"
     }, {
         "name": "Sebastián Quisiyupanqui",
-        "position": "Customer Service Manager",
-        "contact": "manriquefx@limabusiness.info",
+        "position": "Community Manager",
+        "contact": "quisiyupanquisx@limabusiness.info",
         "image": "quisiyupanquisx-profile.jpg"
     }]
 }
