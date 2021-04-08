@@ -216,7 +216,7 @@ fetch(upcEvURL)
         dirElement.forEach(image => {
             let dirSection = document.createElement('section');
             let galImage = document.createElement('img');
-            galImage.setAttribute('src', `assets/${image}`);
+            galImage.setAttribute('src', `assets/${image.image}`);
             galImage.setAttribute('alt', `${image.title} image`);
             galImage.setAttribute('width', '540');
             galImage.setAttribute('loading', 'lazy');
