@@ -186,10 +186,32 @@ fetch(requestURL)
 
 // -------------Board directors JSON----------------
 fetch(upcEvURL)
-.then(response => response.json())
-.then(jsonObject => {
-    console.log(jsonObject);
-})
+    .then(response => response.json())
+    .then(jsonObject => {
+        console.log(jsonObject);
+        let dirElement = jsonObject.directors;
+        dirElement.forEach(director => {
+            let dirSection = document.createElement('section');
+            let dirName = document.createElement('h3');
+            let dirPosition = document.createElement('div');
+            let dirProfImg = document.createElement('img');
+            let dirContact = document.createElement('div');
+            let dirMail = document.createElement('a')
+            dirName.textContent = director.name;
+            dirPosition.textContent = director.position;
+            dirProfImg.setAttribute('src', `assets/${director.image}`);
+            dirProfImg.setAttribute('alt', `${director.position}`);
+            dirProfImg.setAttribute('width', '540');
+            dirMail.setAttribute('href', `mailto:${director.contact}`);
+            dirMail.textContent = `Email: ${director.contact}`;
+            dirContact.appendChild(dirMail);
+            dirSection.appendChild(dirName);
+            dirSection.appendChild(dirPosition);
+            dirSection.appendChild(dirProfImg);
+            dirSection.appendChild(dirMail);
+            document.querySelector('div.board-directors').appendChild(dirSection);
+        })
+    })
 
 const images = document.querySelectorAll('img');
 const config = {
