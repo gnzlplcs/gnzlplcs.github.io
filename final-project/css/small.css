@@ -195,6 +195,7 @@ h3 {
 
 
 .description p,
+.description ul li,
 .membership p {
     font-size: 1.4rem;
     line-height: 1.4;
