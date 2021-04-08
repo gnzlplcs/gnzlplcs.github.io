@@ -215,13 +215,17 @@ fetch(upcEvURL)
         let dirElement = jsonObject.gallery;
         dirElement.forEach(image => {
             let dirSection = document.createElement('section');
+            let imgFigure = document.createElement('figure');
             let galImage = document.createElement('img');
+            let imgCaption = document.createElement('figcaption');
             galImage.setAttribute('src', `assets/${image.image}`);
             galImage.setAttribute('alt', `${image.title} image`);
             galImage.setAttribute('width', '540');
             galImage.setAttribute('loading', 'lazy');
-            galImage.setAttribute('title', `${image.title}`);
-            dirSection.appendChild(galImage);
+            imgCaption.textContent = image.title;
+            imgFigure.appendChild(galImage);
+            imgFigure.appendChild(imgCaption);
+            dirSection.appendChild(imgFigure);
             document.querySelector('div.gallery').appendChild(dirSection);
         })
     })

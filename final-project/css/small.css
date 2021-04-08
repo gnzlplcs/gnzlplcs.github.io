@@ -218,7 +218,8 @@ h3 {
 }
 
 .cards-locals section,
-.board-directors section  {
+.board-directors section,
+.gallery section  {
     display: grid;
 }
 
@@ -234,7 +235,8 @@ h3 {
 
 .upcoming-events section img,
 .cards-locals-dir section img,
-.board-directors section img {
+.board-directors section img,
+.gallery section img {
     width: 100%;
     border-radius: 10px;
 }
