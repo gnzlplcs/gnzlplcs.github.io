@@ -188,7 +188,6 @@ fetch(requestURL)
 fetch(upcEvURL)
     .then(response => response.json())
     .then(jsonObject => {
-        console.log(jsonObject);
         let dirElement = jsonObject.directors;
         dirElement.forEach(director => {
             let dirSection = document.createElement('section');
@@ -205,6 +204,25 @@ fetch(upcEvURL)
             dirSection.appendChild(dirPosition);
             dirSection.appendChild(dirProfImg);
             document.querySelector('div.board-directors').appendChild(dirSection);
+        })
+    })
+
+// -------------------Gallery-------------
+
+    fetch(upcEvURL)
+    .then(response => response.json())
+    .then(jsonObject => {
+        let dirElement = jsonObject.gallery;
+        dirElement.forEach(image => {
+            let dirSection = document.createElement('section');
+            let galImage = document.createElement('img');
+            galImage.setAttribute('src', `assets/${image}`);
+            galImage.setAttribute('alt', `${image.title} image`);
+            galImage.setAttribute('width', '540');
+            galImage.setAttribute('loading', 'lazy');
+            galImage.setAttribute('title', `${image.title}`);
+            dirSection.appendChild(galImage);
+            document.querySelector('div.gallery').appendChild(dirSection);
         })
     })
 

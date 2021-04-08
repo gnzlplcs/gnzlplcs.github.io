@@ -122,12 +122,23 @@
         "image": "mistura-festival.jpg"
     }],
     "gallery": [{
-        "image1": "image1.jpg",
-        "image2": "image2.jpg",
-        "image3": "image3.jpg",
-        "image4": "image4.jpg",
-        "image5": "image5.jpg",
-        "image6": "image6.jpg"
+        "title": "San Isidro, financial district",
+        "image": "image1.jpg"
+    }, {
+        "title": "Lima Cathedral",
+        "image": "image2.jpg"
+    }, {
+        "title": "Water Park",
+        "image": "image3.jpg"
+    }, {
+        "title": "Plaza Mayor",
+        "image": "image4.jpg"
+    }, {
+        "title": "Miaflores Beacon",
+        "image": "image5.jpg"
+    }, {
+        "title": "Costa Verde, Miraflores",
+        "image": "image6.jpg"
     }],
     "directors": [{
         "name": "Pamela Pérez",
