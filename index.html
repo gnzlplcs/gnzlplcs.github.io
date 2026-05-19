@@ -1,26 +1,301 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonza's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonzalo Palacios — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #1a1a18;
+      --text-secondary: #6b6b65;
+      --border: #d4d2ca;
+      --bg: #faf9f6;
+      --accent: #1a1a18;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.7;
+      padding: 3rem 1.5rem 5rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Masthead */
+    .masthead {
+      border-top: 2px solid var(--text-primary);
+      border-bottom: 0.5px solid var(--border);
+      padding: 1.25rem 0 1rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .masthead-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    .masthead-meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Section utilities */
+    .kicker {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      font-weight: 300;
+    }
+    hr.rule {
+      border: none;
+      border-top: 0.5px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* Feature grid */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 580px) {
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+
+    .headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .standfirst {
+      font-size: 15px;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .body-text {
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .pull-quote {
+      border-left: 2px solid var(--text-primary);
+      padding: 0.25rem 0 0.25rem 1rem;
+      margin: 1.5rem 0;
+    }
+    .pull-quote p {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* Sidebar */
+    .sidebar-section { margin-bottom: 1.5rem; }
+    .sidebar-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      font-weight: 300;
+      border-bottom: 0.5px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+    .sidebar-item {
+      font-size: 13px;
+      line-height: 1.6;
+      padding: 4px 0;
+      border-bottom: 0.5px solid var(--border);
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .sidebar-item:last-child { border-bottom: none; }
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--text-secondary);
+      flex-shrink: 0;
+      position: relative;
+      top: 1px;
+    }
+
+    /* Projects */
+    .project-card {
+      border-top: 0.5px solid var(--border);
+      padding-top: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .project-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .project-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border: 0.5px solid var(--border);
+      border-radius: 2px;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    a.tag:hover { color: var(--text-primary); border-color: var(--text-secondary); }
+
+    /* Footer */
+    .footer-strip {
+      border-top: 2px solid var(--text-primary);
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2.5rem;
+    }
+    .footer-link {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .footer-link:hover { color: var(--text-primary); }
+    .footer-issue {
+      font-size: 11px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Gonzalo Palacios' Portfolio</h1>
-    <h2>Team Member Allocation</h2>
-    <p>This project is a nifty little app designed to keep track of team members. It's got a neat
-        trick up its sleeve - it stashes data right in your browser's <code>localStorage()</code>. Crafted with
-        React JS, it takes advantage of the <code>create-react-app</code> feature. And that's not all - it's got
-        React Router under the hood and is decked out in Bootstrap for that sleek look. Despite its
-        humble nature, it's got some serious tech going on with the use of React Hooks like
-        <code>useState()</code>, <code>useEffect()</code>, and <code>useContext()</code>.</p>
 
-    <p>And guess what? It's live on Netlify, which is pretty cool because it supports routing. So,
-        there you have it - a modest yet technologically robust project, ready to manage your teams!
-    </p>
-    <a href="https://fancy-cucurucho-570d4c.netlify.app/">Site</a>
-    <a href="https://github.com/gnzlplcs/team-member-allocation">Repo</a>
+  <header class="masthead">
+    <span class="masthead-name">Gonzalo Palacios</span>
+    <span class="masthead-meta">Lima, Perú &nbsp;·&nbsp; 2026</span>
+  </header>
+
+  <main>
+    <div class="feature-grid">
+      <div>
+        <p class="kicker">Profile</p>
+        <h1 class="headline">Data, learning, and the sentences in between</h1>
+        <p class="standfirst">Learning Specialist and analyst at the intersection of healthcare operations, instructional design, and the written word.</p>
+        <p class="body-text">I train people on complex systems — Medicare plans, QA processes, operational workflows — and build the reports that tell whether the training worked. I also write, because precision in language and precision in data turn out to require the same instincts.</p>
+        <p class="body-text">Currently deepening my fluency in Python and Power BI, with a longer horizon in machine learning and data science.</p>
+
+        <blockquote class="pull-quote">
+          <p>"The gap between raw data and a good decision is, almost always, a communication problem."</p>
+        </blockquote>
+      </div>
+
+      <aside>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Disciplines</div>
+          <div class="sidebar-item"><span class="dot"></span>Learning &amp; Instructional Design</div>
+          <div class="sidebar-item"><span class="dot"></span>Data Analysis &amp; Reporting</div>
+          <div class="sidebar-item"><span class="dot"></span>Business Intelligence (Power BI)</div>
+          <div class="sidebar-item"><span class="dot"></span>Healthcare Operations (UHC/BPO)</div>
+          <div class="sidebar-item"><span class="dot"></span>Essay Writing</div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-label">Tools &amp; stack</div>
+          <div class="sidebar-item"><span class="dot"></span>Power BI · DAX · Power Query</div>
+          <div class="sidebar-item"><span class="dot"></span>Excel (advanced automation)</div>
+          <div class="sidebar-item"><span class="dot"></span>Python · pandas</div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-label">Languages</div>
+          <div class="sidebar-item"><span class="dot"></span>Spanish — native</div>
+          <div class="sidebar-item"><span class="dot"></span>English — professional</div>
+          <div class="sidebar-item"><span class="dot"></span>French · Japanese — in progress</div>
+        </div>
+      </aside>
+    </div>
+
+    <hr class="rule">
+    <p class="kicker">Selected work</p>
+
+    <div class="project-card">
+      <h2 class="project-title">Healthcare 101 — New Hire Training Package</h2>
+      <p class="project-desc">A complete onboarding curriculum for UHC account agents: Medicare Parts A–D, plan types, enrollment periods, member navigation. Includes voiceover script, slide content, and quiz built with 2026 CMS figures.</p>
+      <div class="tag-row">
+        <span class="tag">Instructional Design</span>
+        <span class="tag">Healthcare</span>
+        <span class="tag">UHC</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2 class="project-title">Daily Reporting Automation — UHC Account</h2>
+      <p class="project-desc">Redesigned a 10+ report daily workflow (NPS, FCR, AHT, Compliance, Quality) using Power Query folder routing. Reduced a 4-hour manual process to under 45 minutes.</p>
+      <div class="tag-row">
+        <span class="tag">Excel</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">BPO Ops</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2 class="project-title">QA Performance Analysis — HeAlth Account</h2>
+      <p class="project-desc">Site-level QA diagnostic: VBM bucket segmentation, coaching effectiveness across 15 coaches, root cause analysis identifying knowledge and empathy gaps as primary failure drivers.</p>
+      <div class="tag-row">
+        <span class="tag">Power BI</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Quality Analysis</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2 class="project-title">Team Member Allocation App</h2>
+      <p class="project-desc">An earlier chapter: a React application using localStorage, React Router, and Bootstrap for managing team rosters. Deployed on Netlify.</p>
+      <div class="tag-row">
+        <span class="tag">React</span>
+        <span class="tag">JavaScript</span>
+        <a href="https://fancy-cucurucho-570d4c.netlify.app/" class="tag" target="_blank" rel="noopener">Live site ↗</a>
+        <a href="https://github.com/gnzlplcs/team-member-allocation" class="tag" target="_blank" rel="noopener">Repo ↗</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-strip">
+    <a href="https://eternalmonday.substack.com" class="footer-link" target="_blank" rel="noopener">Eternal Monday — Essays in Spanish ↗</a>
+    <span class="footer-issue">gnzlplcs · github.io</span>
+  </footer>
+
 </body>
-
 </html>
