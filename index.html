@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --text-primary: #1a1a18;
       --text-secondary: #6b6b65;
@@ -17,7 +17,7 @@
       --bg: #faf9f6;
       --accent: #1a1a18;
     }
-
+ 
     body {
       background: var(--bg);
       color: var(--text-primary);
@@ -28,7 +28,7 @@
       max-width: 780px;
       margin: 0 auto;
     }
-
+ 
     /* Masthead */
     .masthead {
       border-top: 2px solid var(--text-primary);
@@ -53,7 +53,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
-
+ 
     /* Section utilities */
     .kicker {
       font-size: 11px;
@@ -68,7 +68,7 @@
       border-top: 0.5px solid var(--border);
       margin: 2.5rem 0;
     }
-
+ 
     /* Feature grid */
     .feature-grid {
       display: grid;
@@ -79,7 +79,7 @@
     @media (max-width: 580px) {
       .feature-grid { grid-template-columns: 1fr; }
     }
-
+ 
     .headline {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 24px;
@@ -110,7 +110,7 @@
       font-style: italic;
       line-height: 1.5;
     }
-
+ 
     /* Sidebar */
     .sidebar-section { margin-bottom: 1.5rem; }
     .sidebar-label {
@@ -142,7 +142,7 @@
       position: relative;
       top: 1px;
     }
-
+ 
     /* Projects */
     .project-card {
       border-top: 0.5px solid var(--border);
@@ -173,7 +173,12 @@
       text-decoration: none;
     }
     a.tag:hover { color: var(--text-primary); border-color: var(--text-secondary); }
-
+ 
+    /* Nav links in masthead */
+    .masthead-links { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .masthead-link { font-size: 12px; color: var(--text-secondary); text-decoration: none; letter-spacing: 0.05em; }
+    .masthead-link:hover { color: var(--text-primary); }
+ 
     /* Footer */
     .footer-strip {
       border-top: 2px solid var(--text-primary);
@@ -201,43 +206,60 @@
   </style>
 </head>
 <body>
-
+ 
   <header class="masthead">
     <span class="masthead-name">Gonzalo Palacios</span>
-    <span class="masthead-meta">Lima, Perú &nbsp;·&nbsp; 2026</span>
+    <div class="masthead-links">
+      <a href="mailto:palaciosgm@outlook.com" class="masthead-link">palaciosgm@outlook.com</a>
+      <a href="https://linkedin.com/in/gnzlplcs" class="masthead-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/gnzlplcs" class="masthead-link" target="_blank" rel="noopener">GitHub ↗</a>
+      <span class="masthead-meta">Lima, Perú</span>
+    </div>
   </header>
-
+ 
   <main>
     <div class="feature-grid">
       <div>
         <p class="kicker">Profile</p>
         <h1 class="headline">Data, learning, and the sentences in between</h1>
-        <p class="standfirst">Learning Specialist and analyst at the intersection of healthcare operations, instructional design, and the written word.</p>
-        <p class="body-text">I train people on complex systems — Medicare plans, QA processes, operational workflows — and build the reports that tell whether the training worked. I also write, because precision in language and precision in data turn out to require the same instincts.</p>
-        <p class="body-text">Currently deepening my fluency in Python and Power BI, with a longer horizon in machine learning and data science.</p>
-
+        <p class="standfirst">Learning Specialist and self-taught data analyst at the intersection of healthcare operations, instructional design, and the written word.</p>
+        <p class="body-text">At Foundever's UHC account, I design and deliver training programs for new hire cohorts, build educational materials tailored to healthcare product certification, and partner with Operations to optimize KPIs through strategic, targeted workshops.</p>
+        <p class="body-text">Previously as Reporting Analyst, I prepared and delivered daily performance reports across 350+ agents — NPS, UES, Quality scores — and analyzed patterns to surface actionable insights for management. Currently expanding into Python and data science.</p>
+ 
         <blockquote class="pull-quote">
           <p>"The gap between raw data and a good decision is, almost always, a communication problem."</p>
         </blockquote>
       </div>
-
+ 
       <aside>
         <div class="sidebar-section">
           <div class="sidebar-label">Disciplines</div>
           <div class="sidebar-item"><span class="dot"></span>Learning &amp; Instructional Design</div>
-          <div class="sidebar-item"><span class="dot"></span>Data Analysis &amp; Reporting</div>
+          <div class="sidebar-item"><span class="dot"></span>Data Analysis &amp; Performance Reporting</div>
           <div class="sidebar-item"><span class="dot"></span>Business Intelligence (Power BI)</div>
           <div class="sidebar-item"><span class="dot"></span>Healthcare Operations (UHC/BPO)</div>
+          <div class="sidebar-item"><span class="dot"></span>Bilingual Communication (EN/ES)</div>
           <div class="sidebar-item"><span class="dot"></span>Essay Writing</div>
         </div>
-
+ 
         <div class="sidebar-section">
           <div class="sidebar-label">Tools &amp; stack</div>
           <div class="sidebar-item"><span class="dot"></span>Power BI · DAX · Power Query</div>
           <div class="sidebar-item"><span class="dot"></span>Excel (advanced automation)</div>
           <div class="sidebar-item"><span class="dot"></span>Python · pandas</div>
+          <div class="sidebar-item"><span class="dot"></span>Git · GitHub</div>
+          <div class="sidebar-item"><span class="dot"></span>Figma</div>
         </div>
-
+ 
+        <div class="sidebar-section">
+          <div class="sidebar-label">Certificates</div>
+          <div class="sidebar-item"><span class="dot"></span>Certified Facilitator — Foundever</div>
+          <div class="sidebar-item"><span class="dot"></span>Intermediate Python — DataCamp</div>
+          <div class="sidebar-item"><span class="dot"></span>Introduction to Power BI — DataCamp</div>
+          <div class="sidebar-item"><span class="dot"></span>Web Frontend — BYU-Idaho</div>
+          <div class="sidebar-item"><span class="dot"></span>Git &amp; GitHub — Platzi</div>
+        </div>
+ 
         <div class="sidebar-section">
           <div class="sidebar-label">Languages</div>
           <div class="sidebar-item"><span class="dot"></span>Spanish — native</div>
@@ -246,10 +268,10 @@
         </div>
       </aside>
     </div>
-
+ 
     <hr class="rule">
     <p class="kicker">Selected work</p>
-
+ 
     <div class="project-card">
       <h2 class="project-title">Healthcare 101 — New Hire Training Package</h2>
       <p class="project-desc">A complete onboarding curriculum for UHC account agents: Medicare Parts A–D, plan types, enrollment periods, member navigation. Includes voiceover script, slide content, and quiz built with 2026 CMS figures.</p>
@@ -259,43 +281,27 @@
         <span class="tag">UHC</span>
       </div>
     </div>
-
+ 
     <div class="project-card">
       <h2 class="project-title">Daily Reporting Automation — UHC Account</h2>
-      <p class="project-desc">Redesigned a 10+ report daily workflow (NPS, FCR, AHT, Compliance, Quality) using Power Query folder routing. Reduced a 4-hour manual process to under 45 minutes.</p>
+      <p class="project-desc">Built and delivered daily reports on key metrics for 350+ agents — NPS, UES, Quality scores, and other performance indicators. Automated complex multi-source data processes using Excel and Power Query, cutting a 4-hour manual workflow to under 45 minutes.</p>
       <div class="tag-row">
         <span class="tag">Excel</span>
         <span class="tag">Power Query</span>
+        <span class="tag">Data Analysis</span>
         <span class="tag">BPO Ops</span>
       </div>
     </div>
-
-    <div class="project-card">
-      <h2 class="project-title">QA Performance Analysis — HeAlth Account</h2>
-      <p class="project-desc">Site-level QA diagnostic: VBM bucket segmentation, coaching effectiveness across 15 coaches, root cause analysis identifying knowledge and empathy gaps as primary failure drivers.</p>
-      <div class="tag-row">
-        <span class="tag">Power BI</span>
-        <span class="tag">DAX</span>
-        <span class="tag">Quality Analysis</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h2 class="project-title">Team Member Allocation App</h2>
-      <p class="project-desc">An earlier chapter: a React application using localStorage, React Router, and Bootstrap for managing team rosters. Deployed on Netlify.</p>
-      <div class="tag-row">
-        <span class="tag">React</span>
-        <span class="tag">JavaScript</span>
-        <a href="https://fancy-cucurucho-570d4c.netlify.app/" class="tag" target="_blank" rel="noopener">Live site ↗</a>
-        <a href="https://github.com/gnzlplcs/team-member-allocation" class="tag" target="_blank" rel="noopener">Repo ↗</a>
-      </div>
-    </div>
   </main>
-
+ 
   <footer class="footer-strip">
-    <a href="https://eternalmonday.substack.com" class="footer-link" target="_blank" rel="noopener">Eternal Monday — Essays in Spanish ↗</a>
+    <div style="display:flex; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="https://eternalmonday.substack.com" class="footer-link" target="_blank" rel="noopener">Eternal Monday — Essays ↗</a>
+      <a href="https://github.com/gnzlplcs" class="footer-link" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://linkedin.com/in/gnzlplcs" class="footer-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
     <span class="footer-issue">gnzlplcs · github.io</span>
   </footer>
-
+ 
 </body>
 </html>
